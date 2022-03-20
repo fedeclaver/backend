@@ -169,3 +169,49 @@
     at Socket.emitUntyped (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\socket.io\dist\typed-events.js:69:22)
     at E:\Users\Fede\Documents\DESA\backend\backend\node_modules\socket.io\dist\socket.js:466:39
     at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2022-03-20T11:12:50.214] [WARN] myWarn - Unhandled Rejection at: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (C:\Users\U199629\Documents\Coderhouse\backend\backend\node_modules\mongoose\lib\connection.js:797:32)
+    at C:\Users\U199629\Documents\Coderhouse\backend\backend\node_modules\mongoose\lib\index.js:330:10
+    at C:\Users\U199629\Documents\Coderhouse\backend\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\U199629\Documents\Coderhouse\backend\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (C:\Users\U199629\Documents\Coderhouse\backend\backend\node_modules\mongoose\lib\index.js:1151:10)
+    at Mongoose.connect (C:\Users\U199629\Documents\Coderhouse\backend\backend\node_modules\mongoose\lib\index.js:329:20)
+    at Object.<anonymous> (C:\Users\U199629\Documents\Coderhouse\backend\backend\contenedores\ContenedorMongo.js:5:10)
+    at Module._compile (internal/modules/cjs/loader.js:1072:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+[2022-03-20T11:12:51.594] [WARN] myWarn - Unhandled Rejection at: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at Timeout._onTimeout (C:\Users\U199629\Documents\Coderhouse\backend\backend\node_modules\mongodb\lib\sdam\topology.js:325:38)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+[2022-03-20T11:49:07.891] [WARN] myWarn - Unhandled Rejection at: MongooseError: Operation `usuarios.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\U199629\Documents\Coderhouse\backend\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:149:23)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+[2022-03-20T11:49:08.861] [WARN] myWarn - Unhandled Rejection at: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (C:\Users\U199629\Documents\Coderhouse\backend\backend\node_modules\mongoose\lib\connection.js:797:32)
+    at C:\Users\U199629\Documents\Coderhouse\backend\backend\node_modules\mongoose\lib\index.js:330:10
+    at C:\Users\U199629\Documents\Coderhouse\backend\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\U199629\Documents\Coderhouse\backend\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (C:\Users\U199629\Documents\Coderhouse\backend\backend\node_modules\mongoose\lib\index.js:1151:10)
+    at Mongoose.connect (C:\Users\U199629\Documents\Coderhouse\backend\backend\node_modules\mongoose\lib\index.js:329:20)
+    at Object.<anonymous> (C:\Users\U199629\Documents\Coderhouse\backend\backend\contenedores\ContenedorMongo.js:5:10)
+    at Module._compile (internal/modules/cjs/loader.js:1072:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+[2022-03-20T11:49:10.342] [WARN] myWarn - Unhandled Rejection at: MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at Timeout._onTimeout (C:\Users\U199629\Documents\Coderhouse\backend\backend\node_modules\mongodb\lib\sdam\topology.js:325:38)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+[2022-03-20T11:49:10.374] [WARN] myWarn - Unhandled Rejection at: MongooseError: Operation `usuarios.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\U199629\Documents\Coderhouse\backend\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:149:23)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+[2022-03-20T11:52:08.886] [WARN] myWarn - Password incorrecto!
+[2022-03-20T11:52:09.860] [WARN] myWarn - Password incorrecto!
+[2022-03-20T11:52:09.939] [WARN] myWarn - Password incorrecto!
+[2022-03-20T11:52:10.014] [WARN] myWarn - Password incorrecto!
+[2022-03-20T11:52:36.286] [WARN] myWarn - Password incorrecto!
+[2022-03-20T11:52:41.477] [WARN] myWarn - Password incorrecto!
+[2022-03-20T11:55:01.185] [WARN] myWarn - Password incorrecto!
+[2022-03-20T11:58:32.186] [WARN] myWarn - Password incorrecto!
