@@ -1,0 +1,47 @@
+ <div class="row">
+
+          <!-- centro de mensajes -->
+               <div class="card col-12">
+                   <div class="card-header">
+                       <button style="float: right;" class="btn btn-sm btn-secondary" onclick="deleteMensajes()">Limpiar mensajes..</button>
+                       <h2>Centro de mensajes. <span>Compresión al: <span id="centro_mensajes"></span></span></h2>
+                   </div>
+                   <div class="card-body">
+       
+                     
+       
+                       <form class="row row-cols-lg-auto g-3 align-items-center" onsubmit="return addMessage(this)">
+                           <div class="col-12">
+                               <input class="form-control" type="email" id="email" placeholder="Email..." required>
+                           </div>
+                           <div class="col-12">
+                               <input class="form-control" type="text" id="msjnombre" placeholder="nombre..." required>
+                           </div>
+                           <div class="col-12">
+                               <input class="form-control" type="text" id="apellido" placeholder="apellido..." required>
+                           </div>
+                           <div class="col-12">
+                               <input class="form-control" type="number" id="edad" placeholder="edad..." required>
+                           </div>
+                           <div class="col-12">
+                               <input class="form-control" type="text" id="alias" placeholder="alias..." required>
+                           </div>
+                           <div class="col-12">
+                               <input class="form-control" type="text" id="avatar" placeholder="avatar..." required>
+                           </div>
+                           <div class="col-12">
+                               <input class="form-control" type="text" id="text" placeholder="Escribe un mensaje..." required>
+                           </div>
+                           <div class="col-12">
+                               <input class="btn btn-secondary my-2" type="submit" value="Enviar">
+                           </div>
+                       </form>
+                       <div id="mensajes" class="mb-4"></div>
+                      </div>
+                      
+               </div>
+       
+             </div>
+ <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>    
+<script src="js/chat.js"></script>

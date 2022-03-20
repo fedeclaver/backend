@@ -8,8 +8,8 @@ module.exports =  {
     },
     admin:true,
     mongodb: {
-       cnxStr:  process.env.MONGO_ATLAS ,
-      //cnxStr:'mongodb://localhost:27017/ecommerce',
+       //cnxStr:  process.env.MONGO_ATLAS ,
+      cnxStr:'mongodb://localhost:27017/ecommerce',
         options: {
             useNewUrlParser: true,
             useUnifiedTopology: true,
@@ -20,6 +20,12 @@ module.exports =  {
         user: process.env.GMAIL_USER,
         pass: process.env.GMAIL_PASS,
         admin:process.env.GMAIL_ADMIN
+    },
+    template: {
+        extname: ".hbs", 
+        defaultLayout: "index.hbs", 
+        layoutsDir: process.cwd() + "/src/views/layouts", 
+        partialsDir: process.cwd() + "/src/views/partials" 
     },
     firebase: {
         "type": process.env.FIREBASE_type,
@@ -33,14 +39,14 @@ module.exports =  {
         "auth_provider_x509_cert_url": process.env.FIREBASE_auth_provider_x509_cert_url,
         "client_x509_cert_url": process.env.FIREBASE_client_x509_cert_url
             },
-    IS_CLUSTER: process.argv[2] === "CLUSTER" ? true : false,
-    PORT: parseInt(process.argv[3]) || process.env.PORT || 8080,
-    TIEMPO_EXPIRACION : 200000,
      // credenciales Twillio
      TWILIO_ACCOUNT_SID: process.env.TWILIO_ACCOUNT_SID,
      TWILIO_AUTH_TOKEN: process.env.TWILIO_AUTH_TOKEN,
      TWILIO_NUM_SMS: process.env.TWILIO_NUM_SMS,
      TWILIO_NUM_WHATSAPP: process.env.TWILIO_NUM_WHATSAPP,
+     ADMIN_WHATSAPP:process.env.ADMIN_WHATSAPP,
+     TWILIO_SMS_SERVICE: process.env.TWILIO_SMS_SERVICE
+   
 }
 
 

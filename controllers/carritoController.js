@@ -57,8 +57,9 @@ const agregarProducto = async (req, res) => {
  const obtenerCarritos = async (req, res) => {
   loggerTrace.trace("Ingreso a obtenerCarritos");
   try {
-    let carritos = await carritosDao.getAll();    
-    res.json(carritos)
+    let carritos = await carritosDao.getAll();   
+    carritos= JSON.parse(JSON.stringify(carritos)) 
+    res.status(200).render("carritos.hbs", {carritos})
   } catch (error) {
     console.log(error);
     res.status(500).json("Error obtenerCarritos");

@@ -1,380 +1,171 @@
-[2022-01-03T09:57:54.994] [WARN] myWarn - Ruta /favicon.ico método GET no implementado
-[2022-01-03T10:22:05.486] [WARN] myWarn - Ruta /Comprar/agregar/1 método GET no implementado
-[2022-01-03T10:23:04.380] [WARN] myWarn - Ruta /Comprar/agregar/1 método GET no implementado
-[2022-01-03T10:25:02.240] [WARN] myWarn - Ruta /Comprar/agregar/1 método GET no implementado
-[2022-01-03T10:26:08.494] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T10:27:04.245] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T10:42:20.857] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T10:53:18.518] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T10:54:01.804] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T10:54:34.328] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T10:55:08.007] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T10:55:31.629] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T11:04:23.515] [WARN] myWarn - Ruta /compra/agregar/1 método POST no implementado
-[2022-01-03T11:04:33.765] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T11:04:38.475] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T11:05:11.872] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T11:13:47.184] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T12:04:16.984] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T12:06:33.697] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T12:08:25.024] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T12:27:21.065] [WARN] myWarn - Ruta /styles.css método GET no implementado
-[2022-01-03T12:27:50.215] [WARN] myWarn - Usuario ya existe
-[2022-01-03T12:27:58.317] [WARN] myWarn - Ruta /styles.css método GET no implementado
-[2022-01-03T12:28:23.331] [WARN] myWarn - Ruta /styles.css método GET no implementado
-[2022-01-03T12:30:47.645] [WARN] myWarn - Usuario ya existe
-[2022-01-03T12:31:38.949] [WARN] myWarn - Usuario ya existe
-[2022-01-03T12:32:54.172] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T12:36:09.120] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T12:47:29.286] [WARN] myWarn - Unhandled Rejection at: TypeError: Cannot read property 'usuario' of null
-    at Strategy._verify (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:18:19)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2022-01-03T13:25:35.690] [WARN] myWarn - Unhandled Rejection at: TypeError: Cannot read property 'usuario' of null
-    at Strategy._verify (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:18:19)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2022-01-03T13:25:44.104] [WARN] myWarn - Ruta /styles.css método GET no implementado
-[2022-01-03T13:27:07.588] [WARN] myWarn - Unhandled Rejection at: ReferenceError: newItem is not defined
-    at UsuariosDaoMongo.save (E:\Users\Fede\Documents\DESA\backend\contenedores\ContenedorMongo.js:36:52)
-    at findOrCreateUser (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:72:25)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2022-01-03T13:34:21.655] [WARN] myWarn - Ruta /styles.css método GET no implementado
-[2022-01-03T13:37:11.563] [WARN] myWarn - Unhandled Rejection at: ReferenceError: newItem is not defined
-    at UsuariosDaoMongo.save (E:\Users\Fede\Documents\DESA\backend\contenedores\ContenedorMongo.js:36:52)
-    at findOrCreateUser (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:72:25)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2022-01-03T13:38:17.625] [WARN] myWarn - Ruta /styles.css método GET no implementado
-[2022-01-03T13:40:54.335] [WARN] myWarn - Unhandled Rejection at: ReferenceError: newItem is not defined
-    at UsuariosDaoMongo.save (E:\Users\Fede\Documents\DESA\backend\contenedores\ContenedorMongo.js:36:52)
-    at findOrCreateUser (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:72:45)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2022-01-03T13:41:27.431] [WARN] myWarn - Ruta /styles.css método GET no implementado
-[2022-01-03T14:33:40.545] [WARN] myWarn - Ruta /logout.html método GET no implementado
-[2022-01-03T14:37:24.756] [WARN] myWarn - Ruta /styles.css método GET no implementado
-[2022-01-03T15:00:29.444] [WARN] myWarn - Unhandled Rejection at: MongoAPIError: URI must include hostname, domain name, and tld
-    at Object.resolveSRVRecord (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\connection_string.js:51:25)
-    at Object.connect (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\operations\connect.js:41:36)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\mongo_client.js:127:23
-    at Object.maybePromise (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\utils.js:518:5)
-    at MongoClient.connect (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\mongo_client.js:126:24)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\connection.js:786:12
+[2022-03-13T19:20:23.286] [WARN] myWarn - Password incorrecto!
+[2022-03-13T19:27:08.956] [WARN] myWarn - Password incorrecto!
+[2022-03-13T19:42:22.396] [WARN] myWarn - Unhandled Rejection at: ReferenceError: username is not defined
+    at Object.login (E:\Users\Fede\Documents\DESA\backend\backend\controllers\usuarioController.js:12:61)
+    at Strategy._verify (E:\Users\Fede\Documents\DESA\backend\backend\auth\passport.js:19:27)
+    at Strategy.authenticate (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\index.js:281:22
+[2022-03-13T19:47:54.599] [WARN] myWarn - Password incorrecto!
+[2022-03-13T19:47:55.177] [WARN] myWarn - Unhandled Rejection at: ReferenceError: done is not defined
+    at Object.login (E:\Users\Fede\Documents\DESA\backend\backend\controllers\usuarioController.js:22:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-03-13T19:48:34.472] [WARN] myWarn - Password incorrecto!
+[2022-03-13T21:07:12.432] [WARN] myWarn - Unhandled Rejection at: Error: "id" es un campo requerido
+    at Mensaje.set id [as id] (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:17:24)
+    at new Mensaje (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:8:17)
+    at asModel (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:29:21)
+    at E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:37
+    at Array.map (<anonymous>)
+    at asModels (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:28)
+    at MensajesRepo.getAll (E:\Users\Fede\Documents\DESA\backend\backend\repositorios\MensajesRepo.js:17:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MensajesApi.getAll (E:\Users\Fede\Documents\DESA\backend\backend\controllers\mensajesController.js:24:26)
+    at async E:\Users\Fede\Documents\DESA\backend\backend\services\sockets.js:12:28
+[2022-03-13T21:10:08.214] [WARN] myWarn - Unhandled Rejection at: Error: "id" es un campo requerido
+    at Mensaje.set id [as id] (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:17:24)
+    at new Mensaje (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:8:17)
+    at asModel (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:29:21)
+    at E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:37
+    at Array.map (<anonymous>)
+    at asModels (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:28)
+    at MensajesRepo.getAll (E:\Users\Fede\Documents\DESA\backend\backend\repositorios\MensajesRepo.js:17:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MensajesApi.getAll (E:\Users\Fede\Documents\DESA\backend\backend\controllers\mensajesController.js:24:26)
+    at async E:\Users\Fede\Documents\DESA\backend\backend\services\sockets.js:12:28
+[2022-03-13T21:11:37.771] [WARN] myWarn - Unhandled Rejection at: Error: "id" es un campo requerido
+    at Mensaje.set id [as id] (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:17:24)
+    at new Mensaje (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:8:17)
+    at asModel (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:29:21)
+    at E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:37
+    at Array.map (<anonymous>)
+    at asModels (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:28)
+    at MensajesRepo.getAll (E:\Users\Fede\Documents\DESA\backend\backend\repositorios\MensajesRepo.js:17:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MensajesApi.getAll (E:\Users\Fede\Documents\DESA\backend\backend\controllers\mensajesController.js:24:26)
+    at async E:\Users\Fede\Documents\DESA\backend\backend\services\sockets.js:12:28
+[2022-03-13T21:11:41.765] [WARN] myWarn - Unhandled Rejection at: Error: "id" es un campo requerido
+    at Mensaje.set id [as id] (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:17:24)
+    at new Mensaje (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:8:17)
+    at asModel (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:29:21)
+    at E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:37
+    at Array.map (<anonymous>)
+    at asModels (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:28)
+    at MensajesRepo.getAll (E:\Users\Fede\Documents\DESA\backend\backend\repositorios\MensajesRepo.js:17:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MensajesApi.getAll (E:\Users\Fede\Documents\DESA\backend\backend\controllers\mensajesController.js:24:26)
+    at async E:\Users\Fede\Documents\DESA\backend\backend\services\sockets.js:12:28
+[2022-03-13T21:11:53.757] [WARN] myWarn - Unhandled Rejection at: Error: "id" es un campo requerido
+    at Mensaje.set id [as id] (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:17:24)
+    at new Mensaje (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:8:17)
+    at asModel (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:29:21)
+    at E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:37
+    at Array.map (<anonymous>)
+    at asModels (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:28)
+    at MensajesRepo.getAll (E:\Users\Fede\Documents\DESA\backend\backend\repositorios\MensajesRepo.js:17:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MensajesApi.getAll (E:\Users\Fede\Documents\DESA\backend\backend\controllers\mensajesController.js:24:26)
+    at async E:\Users\Fede\Documents\DESA\backend\backend\services\sockets.js:12:28
+[2022-03-13T21:14:21.299] [WARN] myWarn - Unhandled Rejection at: Error: "id" es un campo requerido
+    at Mensaje.set id [as id] (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:17:24)
+    at new Mensaje (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:8:17)
+    at asModel (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:29:21)
+    at E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:37
+    at Array.map (<anonymous>)
+    at asModels (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:28)
+    at MensajesRepo.getAll (E:\Users\Fede\Documents\DESA\backend\backend\repositorios\MensajesRepo.js:17:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MensajesApi.getAll (E:\Users\Fede\Documents\DESA\backend\backend\controllers\mensajesController.js:24:26)
+    at async E:\Users\Fede\Documents\DESA\backend\backend\services\sockets.js:12:28
+[2022-03-13T21:15:36.085] [WARN] myWarn - Unhandled Rejection at: Error: "id" es un campo requerido
+    at Mensaje.set id [as id] (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:17:24)
+    at new Mensaje (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:8:17)
+    at asModel (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:29:21)
+    at E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:37
+    at Array.map (<anonymous>)
+    at asModels (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:28)
+    at MensajesRepo.getAll (E:\Users\Fede\Documents\DESA\backend\backend\repositorios\MensajesRepo.js:17:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MensajesApi.getAll (E:\Users\Fede\Documents\DESA\backend\backend\controllers\mensajesController.js:24:26)
+    at async E:\Users\Fede\Documents\DESA\backend\backend\services\sockets.js:12:28
+[2022-03-13T21:17:02.228] [WARN] myWarn - Unhandled Rejection at: Error: "id" es un campo requerido
+    at Mensaje.set id [as id] (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:17:24)
+    at new Mensaje (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:8:17)
+    at asModel (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:29:21)
+    at E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:37
+    at Array.map (<anonymous>)
+    at asModels (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:28)
+    at MensajesRepo.getAll (E:\Users\Fede\Documents\DESA\backend\backend\repositorios\MensajesRepo.js:17:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MensajesApi.getAll (E:\Users\Fede\Documents\DESA\backend\backend\controllers\mensajesController.js:24:26)
+    at async E:\Users\Fede\Documents\DESA\backend\backend\services\sockets.js:12:28
+[2022-03-13T21:19:13.557] [WARN] myWarn - Unhandled Rejection at: Error: "id" es un campo requerido
+    at Mensaje.set id [as id] (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:17:24)
+    at new Mensaje (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:8:17)
+    at asModel (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:29:21)
+    at E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:37
+    at Array.map (<anonymous>)
+    at asModels (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:28)
+    at MensajesRepo.getAll (E:\Users\Fede\Documents\DESA\backend\backend\repositorios\MensajesRepo.js:17:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MensajesApi.getAll (E:\Users\Fede\Documents\DESA\backend\backend\controllers\mensajesController.js:24:26)
+    at async E:\Users\Fede\Documents\DESA\backend\backend\services\sockets.js:12:28
+[2022-03-13T21:19:15.167] [WARN] myWarn - Unhandled Rejection at: Error: "id" es un campo requerido
+    at Mensaje.set id [as id] (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:17:24)
+    at new Mensaje (E:\Users\Fede\Documents\DESA\backend\backend\modelos\Mensaje.js:8:17)
+    at asModel (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:29:21)
+    at E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:37
+    at Array.map (<anonymous>)
+    at asModels (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:34:28)
+    at MensajesRepo.getAll (E:\Users\Fede\Documents\DESA\backend\backend\repositorios\MensajesRepo.js:17:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MensajesApi.getAll (E:\Users\Fede\Documents\DESA\backend\backend\controllers\mensajesController.js:24:26)
+    at async E:\Users\Fede\Documents\DESA\backend\backend\services\sockets.js:12:28
+[2022-03-13T21:19:28.211] [WARN] myWarn - Unhandled Rejection at: TypeError: Assignment to constant variable.
+    at MensajesRepo.getAll (E:\Users\Fede\Documents\DESA\backend\backend\repositorios\MensajesRepo.js:18:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MensajesApi.getAll (E:\Users\Fede\Documents\DESA\backend\backend\controllers\mensajesController.js:24:26)
+    at async E:\Users\Fede\Documents\DESA\backend\backend\services\sockets.js:12:28
+[2022-03-13T21:40:24.628] [WARN] myWarn - Unhandled Rejection at: MongooseServerSelectionError: connection timed out
+    at NativeConnection.Connection.openUri (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\mongoose\lib\connection.js:797:32)
+    at E:\Users\Fede\Documents\DESA\backend\backend\node_modules\mongoose\lib\index.js:330:10
+    at E:\Users\Fede\Documents\DESA\backend\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
     at new Promise (<anonymous>)
-    at NativeConnection.Connection.openUri (E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\connection.js:776:19)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\index.js:330:10
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
-[2022-01-03T15:01:45.693] [WARN] myWarn - Unhandled Rejection at: MongoAPIError: URI must include hostname, domain name, and tld
-    at Object.resolveSRVRecord (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\connection_string.js:51:25)
-    at Object.connect (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\operations\connect.js:41:36)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\mongo_client.js:127:23
-    at Object.maybePromise (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\utils.js:518:5)
-    at MongoClient.connect (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\mongo_client.js:126:24)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\connection.js:786:12
-    at new Promise (<anonymous>)
-    at NativeConnection.Connection.openUri (E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\connection.js:776:19)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\index.js:330:10
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
-[2022-01-03T15:02:38.344] [WARN] myWarn - Unhandled Rejection at: MongoAPIError: URI must include hostname, domain name, and tld
-    at Object.resolveSRVRecord (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\connection_string.js:51:25)
-    at Object.connect (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\operations\connect.js:41:36)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\mongo_client.js:127:23
-    at Object.maybePromise (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\utils.js:518:5)
-    at MongoClient.connect (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\mongo_client.js:126:24)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\connection.js:786:12
-    at new Promise (<anonymous>)
-    at NativeConnection.Connection.openUri (E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\connection.js:776:19)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\index.js:330:10
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
-[2022-01-03T15:04:09.271] [WARN] myWarn - Unhandled Rejection at: MongoAPIError: URI must include hostname, domain name, and tld
-    at Object.resolveSRVRecord (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\connection_string.js:51:25)
-    at Object.connect (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\operations\connect.js:41:36)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\mongo_client.js:127:23
-    at Object.maybePromise (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\utils.js:518:5)
-    at MongoClient.connect (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\mongo_client.js:126:24)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\connection.js:786:12
-    at new Promise (<anonymous>)
-    at NativeConnection.Connection.openUri (E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\connection.js:776:19)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\index.js:330:10
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
-[2022-01-03T15:06:33.245] [WARN] myWarn - Unhandled Rejection at: MongoAPIError: URI must include hostname, domain name, and tld
-    at Object.resolveSRVRecord (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\connection_string.js:51:25)
-    at Object.connect (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\operations\connect.js:41:36)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\mongo_client.js:127:23
-    at Object.maybePromise (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\utils.js:518:5)
-    at MongoClient.connect (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\mongo_client.js:126:24)
-    at Function.connect (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\mongo_client.js:190:36)
-    at new MongoStore (E:\Users\Fede\Documents\DESA\backend\node_modules\connect-mongo\build\main\lib\MongoStore.js:110:46)
-    at Function.create (E:\Users\Fede\Documents\DESA\backend\node_modules\connect-mongo\build\main\lib\MongoStore.js:136:16)
-    at Object.<anonymous> (E:\Users\Fede\Documents\DESA\backend\server.js:44:24)
-    at Module._compile (internal/modules/cjs/loader.js:1063:30)
-[2022-01-03T15:06:33.247] [WARN] myWarn - Unhandled Rejection at: MongoAPIError: URI must include hostname, domain name, and tld
-    at Object.resolveSRVRecord (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\connection_string.js:51:25)
-    at Object.connect (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\operations\connect.js:41:36)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\mongo_client.js:127:23
-    at Object.maybePromise (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\utils.js:518:5)
-    at MongoClient.connect (E:\Users\Fede\Documents\DESA\backend\node_modules\mongodb\lib\mongo_client.js:126:24)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\connection.js:786:12
-    at new Promise (<anonymous>)
-    at NativeConnection.Connection.openUri (E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\connection.js:776:19)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\index.js:330:10
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
-[2022-01-03T15:10:27.256] [WARN] myWarn - Unhandled Rejection at: Error: querySrv ENOTFOUND _mongodb._tcp.luster0.zyvdl.mongodb.net
-    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)
-    at QueryReqWrap.callbackTrampoline (internal/async_hooks.js:131:14)
-[2022-01-03T15:10:27.259] [WARN] myWarn - Unhandled Rejection at: Error: querySrv ENOTFOUND _mongodb._tcp.luster0.zyvdl.mongodb.net
-    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)
-    at QueryReqWrap.callbackTrampoline (internal/async_hooks.js:131:14)
-[2022-01-03T15:12:36.402] [WARN] myWarn - Ruta /styles.css método GET no implementado
-[2022-01-03T15:15:36.141] [WARN] myWarn - Unhandled Rejection at: Error: querySrv ENOTFOUND _mongodb._tcp.luster0.zyvdl.mongodb.net
-    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)
-    at QueryReqWrap.callbackTrampoline (internal/async_hooks.js:131:14)
-[2022-01-03T15:15:36.143] [WARN] myWarn - Unhandled Rejection at: Error: querySrv ENOTFOUND _mongodb._tcp.luster0.zyvdl.mongodb.net
-    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)
-    at QueryReqWrap.callbackTrampoline (internal/async_hooks.js:131:14)
-[2022-01-03T15:22:41.838] [WARN] myWarn - Unhandled Rejection at: TypeError: Cannot read property 'usuario' of null
-    at Strategy._verify (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:18:19)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2022-01-03T15:24:30.008] [WARN] myWarn - Usuario no existe!
-[2022-01-03T15:24:34.190] [WARN] myWarn - Ruta /styles.css método GET no implementado
-[2022-01-03T15:29:22.654] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T16:04:43.494] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T16:05:00.508] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T16:07:38.411] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T16:09:39.233] [WARN] myWarn - Ruta /auth/login método GET no implementado
-[2022-01-03T16:11:03.504] [WARN] myWarn - Password incorrecto!
-[2022-01-03T16:56:25.833] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T16:57:34.148] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T17:09:44.438] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T17:10:03.412] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T17:17:22.860] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T17:18:54.786] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T17:24:06.232] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-03T17:24:11.179] [WARN] myWarn - Ruta /compra/agregar/1 método POST no implementado
-[2022-01-04T09:06:02.406] [WARN] myWarn - Ruta /favicon.ico método GET no implementado
-[2022-01-04T09:06:15.768] [WARN] myWarn - Password incorrecto!
-[2022-01-04T09:06:28.605] [WARN] myWarn - Ruta /img/1641265318276_fede.jpg método GET no implementado
-[2022-01-04T09:07:04.057] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-04T09:10:12.068] [WARN] myWarn - Unhandled Rejection at: Error: querySrv ETIMEOUT _mongodb._tcp.cluster0.zyvdl.mongodb.net
-    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)
-    at QueryReqWrap.callbackTrampoline (internal/async_hooks.js:131:14)
-[2022-01-04T09:11:23.596] [WARN] myWarn - Unhandled Rejection at: Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.zyvdl.mongodb.net
-    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)
-    at QueryReqWrap.callbackTrampoline (internal/async_hooks.js:131:14)
-[2022-01-04T09:12:59.707] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-04T09:13:14.651] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-04T09:15:04.748] [WARN] myWarn - Unhandled Rejection at: MongooseServerSelectionError: connection timed out
-    at NativeConnection.Connection.openUri (E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\connection.js:797:32)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\index.js:330:10
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
-    at new Promise (<anonymous>)
-    at promiseOrCallback (E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
-    at Mongoose._promiseOrCallback (E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\index.js:1151:10)
-    at Mongoose.connect (E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\index.js:329:20)
-    at Object.<anonymous> (E:\Users\Fede\Documents\DESA\backend\contenedores\ContenedorMongo.js:5:10)
-    at Module._compile (internal/modules/cjs/loader.js:1063:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
-[2022-01-04T09:15:19.170] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-04T09:37:18.293] [WARN] myWarn - Ruta /carritos/listar método GET no implementado
-[2022-01-04T09:37:20.098] [WARN] myWarn - Ruta /carritos/listar método GET no implementado
-[2022-01-04T09:38:38.879] [WARN] myWarn - Ruta /carritos/listar método GET no implementado
-[2022-01-04T09:50:51.199] [WARN] myWarn - Unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
-    at ServerResponse.setHeader (_http_outgoing.js:558:11)
-    at ServerResponse.header (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\response.js:771:10)
-    at ServerResponse.json (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\response.js:264:10)
-    at crearCarrito (E:\Users\Fede\Documents\DESA\backend\controllers\carritoController.js:26:21)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2022-01-04T10:07:15.695] [WARN] myWarn - Ruta /compra/agregar/2 método GET no implementado
-[2022-01-04T11:15:12.682] [WARN] myWarn - Ruta /favicon.ico método GET no implementado
-[2022-01-04T11:15:18.630] [WARN] myWarn - Ruta /img/1641265318276_fede.jpg método GET no implementado
-[2022-01-04T11:15:25.495] [WARN] myWarn - Ruta /img/1641265318276_fede.jpg método GET no implementado
-[2022-01-04T11:15:30.071] [WARN] myWarn - Ruta /img/1641265318276_fede.jpg método GET no implementado
-[2022-01-04T11:16:08.895] [WARN] myWarn - Ruta /img/1641265318276_fede.jpg método GET no implementado
-[2022-01-04T11:16:25.368] [WARN] myWarn - Ruta /img/1641265318276_fede.jpg método GET no implementado
-[2022-01-04T11:16:28.549] [WARN] myWarn - Ruta /img/1641265318276_fede.jpg método GET no implementado
-[2022-01-04T11:43:36.933] [WARN] myWarn - Ruta /styles.css método GET no implementado
-[2022-01-04T11:44:15.975] [WARN] myWarn - Usuario ya existe!
-[2022-01-04T11:46:35.381] [WARN] myWarn - Usuario ya existe!
-[2022-01-04T11:49:37.248] [WARN] myWarn - Usuario ya existe!
-[2022-01-04T11:54:48.270] [WARN] myWarn - Usuario ya existe!
-[2022-01-04T12:00:46.509] [WARN] myWarn - Usuario ya existe!
-[2022-01-04T12:04:14.268] [WARN] myWarn - Unhandled Rejection at: CastError: Cast to ObjectId failed for value "{ id: { usuario: 'cfclaver@hotmail.com' } }" (type Object) at path "_id" for model "usuarios"
-    at model.Query.exec (E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\query.js:4545:21)
-    at model.Query.Query.then (E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\query.js:4644:15)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2022-01-04T12:14:22.000] [WARN] myWarn - Ruta /styles.css método GET no implementado
-[2022-01-04T12:29:43.331] [WARN] myWarn - Ruta /styles.css método GET no implementado
-[2022-01-04T12:32:17.784] [WARN] myWarn - Ruta /img/1641306030555_fede.jpg método GET no implementado
-[2022-01-04T12:32:55.004] [WARN] myWarn - Unhandled Rejection at: Error: data and hash arguments required
-    at Object.compareSync (E:\Users\Fede\Documents\DESA\backend\node_modules\bcrypt\bcrypt.js:166:15)
-    at isValidPassword (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:37:19)
-    at Strategy._verify (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:24:14)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2022-01-04T12:34:58.366] [WARN] myWarn - Unhandled Rejection at: Error: data and hash arguments required
-    at Object.compareSync (E:\Users\Fede\Documents\DESA\backend\node_modules\bcrypt\bcrypt.js:166:15)
-    at isValidPassword (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:37:19)
-    at Strategy._verify (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:24:14)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2022-01-04T12:34:58.371] [WARN] myWarn - Unhandled Rejection at: Error: data and hash arguments required
-    at Object.compareSync (E:\Users\Fede\Documents\DESA\backend\node_modules\bcrypt\bcrypt.js:166:15)
-    at isValidPassword (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:37:19)
-    at Strategy._verify (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:24:14)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2022-01-04T12:36:33.713] [WARN] myWarn - Unhandled Rejection at: Error: data and hash arguments required
-    at Object.compareSync (E:\Users\Fede\Documents\DESA\backend\node_modules\bcrypt\bcrypt.js:166:15)
-    at isValidPassword (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:37:19)
-    at Strategy._verify (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:24:14)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2022-01-04T12:37:05.447] [WARN] myWarn - Unhandled Rejection at: TypeError: usuariosDao.findOne is not a function
-    at Strategy._verify (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:15:40)
-    at Strategy.authenticate (E:\Users\Fede\Documents\DESA\backend\node_modules\passport-local\lib\strategy.js:88:12)
-    at attempt (E:\Users\Fede\Documents\DESA\backend\node_modules\passport\lib\middleware\authenticate.js:369:16)
-    at authenticate (E:\Users\Fede\Documents\DESA\backend\node_modules\passport\lib\middleware\authenticate.js:370:7)
-    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\layer.js:95:5)
-    at next (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\layer.js:95:5)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\index.js:281:22
-    at Function.process_params (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\index.js:335:12)
-[2022-01-04T12:50:23.218] [WARN] myWarn - Unhandled Rejection at: TypeError: usuariosDao.findOne is not a function
-    at Strategy._verify (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:15:40)
-    at Strategy.authenticate (E:\Users\Fede\Documents\DESA\backend\node_modules\passport-local\lib\strategy.js:88:12)
-    at attempt (E:\Users\Fede\Documents\DESA\backend\node_modules\passport\lib\middleware\authenticate.js:369:16)
-    at authenticate (E:\Users\Fede\Documents\DESA\backend\node_modules\passport\lib\middleware\authenticate.js:370:7)
-    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\layer.js:95:5)
-    at next (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\layer.js:95:5)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\index.js:281:22
-    at Function.process_params (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\index.js:335:12)
-[2022-01-04T12:56:47.258] [WARN] myWarn - Unhandled Rejection at: TypeError: Converting circular structure to JSON
-    --> starting at object with constructor 'Topology'
-    |     property 's' -> object with constructor 'Object'
-    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
-    --- property 'topology' closes the circle
-    at JSON.stringify (<anonymous>)
-    at UsuariosDaoMongo.getUserById (E:\Users\Fede\Documents\DESA\backend\contenedores\ContenedorMongo.js:69:28)
-    at Strategy._verify (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:15:40)
-    at Strategy.authenticate (E:\Users\Fede\Documents\DESA\backend\node_modules\passport-local\lib\strategy.js:88:12)
-    at attempt (E:\Users\Fede\Documents\DESA\backend\node_modules\passport\lib\middleware\authenticate.js:369:16)
-    at authenticate (E:\Users\Fede\Documents\DESA\backend\node_modules\passport\lib\middleware\authenticate.js:370:7)
-    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\layer.js:95:5)
-    at next (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\layer.js:95:5)
-[2022-01-04T12:58:16.723] [WARN] myWarn - Unhandled Rejection at: TypeError: this.coleccion.getById is not a function
-    at UsuariosDaoMongo.getUserById (E:\Users\Fede\Documents\DESA\backend\contenedores\ContenedorMongo.js:64:33)
-    at Strategy._verify (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:15:40)
-    at Strategy.authenticate (E:\Users\Fede\Documents\DESA\backend\node_modules\passport-local\lib\strategy.js:88:12)
-    at attempt (E:\Users\Fede\Documents\DESA\backend\node_modules\passport\lib\middleware\authenticate.js:369:16)
-    at authenticate (E:\Users\Fede\Documents\DESA\backend\node_modules\passport\lib\middleware\authenticate.js:370:7)
-    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\layer.js:95:5)
-    at next (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\layer.js:95:5)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\index.js:281:22
-[2022-01-04T13:11:22.008] [WARN] myWarn - Ruta /img/1641306030555_fede.jpg método GET no implementado
-[2022-01-04T13:17:45.894] [WARN] myWarn - Unhandled Rejection at: ReferenceError: usuario is not defined
-    at UsuariosDaoMongo.getByname (E:\Users\Fede\Documents\DESA\backend\contenedores\ContenedorMongo.js:65:47)
-    at Strategy._verify (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:15:40)
-    at Strategy.authenticate (E:\Users\Fede\Documents\DESA\backend\node_modules\passport-local\lib\strategy.js:88:12)
-    at attempt (E:\Users\Fede\Documents\DESA\backend\node_modules\passport\lib\middleware\authenticate.js:369:16)
-    at authenticate (E:\Users\Fede\Documents\DESA\backend\node_modules\passport\lib\middleware\authenticate.js:370:7)
-    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\layer.js:95:5)
-    at next (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\layer.js:95:5)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\index.js:281:22
-[2022-01-04T13:18:33.724] [WARN] myWarn - Unhandled Rejection at: CastError: Cast to string failed for value "{ usuario: /^cfclaveraraosdsdsz@teco.com.ar$/i }" (type Object) at path "usuario" for model "usuarios"
-    at model.Query.exec (E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\query.js:4545:21)
-    at model.Query.Query.then (E:\Users\Fede\Documents\DESA\backend\node_modules\mongoose\lib\query.js:4644:15)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2022-01-04T13:21:54.854] [WARN] myWarn - Unhandled Rejection at: ReferenceError: username is not defined
-    at UsuariosDaoMongo.getByname (E:\Users\Fede\Documents\DESA\backend\contenedores\ContenedorMongo.js:65:72)
-    at Strategy._verify (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:15:40)
-    at Strategy.authenticate (E:\Users\Fede\Documents\DESA\backend\node_modules\passport-local\lib\strategy.js:88:12)
-    at attempt (E:\Users\Fede\Documents\DESA\backend\node_modules\passport\lib\middleware\authenticate.js:369:16)
-    at authenticate (E:\Users\Fede\Documents\DESA\backend\node_modules\passport\lib\middleware\authenticate.js:370:7)
-    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\layer.js:95:5)
-    at next (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\layer.js:95:5)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\index.js:281:22
-[2022-01-04T13:22:21.397] [WARN] myWarn - Unhandled Rejection at: ReferenceError: username is not defined
-    at UsuariosDaoMongo.getByname (E:\Users\Fede\Documents\DESA\backend\contenedores\ContenedorMongo.js:65:72)
-    at Strategy._verify (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:15:40)
-    at Strategy.authenticate (E:\Users\Fede\Documents\DESA\backend\node_modules\passport-local\lib\strategy.js:88:12)
-    at attempt (E:\Users\Fede\Documents\DESA\backend\node_modules\passport\lib\middleware\authenticate.js:369:16)
-    at authenticate (E:\Users\Fede\Documents\DESA\backend\node_modules\passport\lib\middleware\authenticate.js:370:7)
-    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\layer.js:95:5)
-    at next (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\layer.js:95:5)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\index.js:281:22
-[2022-01-04T13:22:44.133] [WARN] myWarn - Unhandled Rejection at: ReferenceError: username is not defined
-    at UsuariosDaoMongo.getByname (E:\Users\Fede\Documents\DESA\backend\contenedores\ContenedorMongo.js:65:72)
-    at Strategy._verify (E:\Users\Fede\Documents\DESA\backend\auth\passport.js:15:40)
-    at Strategy.authenticate (E:\Users\Fede\Documents\DESA\backend\node_modules\passport-local\lib\strategy.js:88:12)
-    at attempt (E:\Users\Fede\Documents\DESA\backend\node_modules\passport\lib\middleware\authenticate.js:369:16)
-    at authenticate (E:\Users\Fede\Documents\DESA\backend\node_modules\passport\lib\middleware\authenticate.js:370:7)
-    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\layer.js:95:5)
-    at next (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\layer.js:95:5)
-    at E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\router\index.js:281:22
-[2022-01-04T13:36:51.491] [WARN] myWarn - Ruta /styles.css método GET no implementado
-[2022-01-04T14:13:32.180] [WARN] myWarn - Password incorrecto!
-[2022-01-04T14:13:50.048] [WARN] myWarn - Password incorrecto!
-[2022-01-04T14:18:55.978] [WARN] myWarn - Password incorrecto!
-[2022-01-04T14:19:41.847] [WARN] myWarn - Password incorrecto!
-[2022-01-04T14:19:48.125] [WARN] myWarn - Password incorrecto!
-[2022-01-04T14:20:01.265] [WARN] myWarn - Ruta /styles.css método GET no implementado
-[2022-01-04T14:20:23.642] [WARN] myWarn - Usuario ya existe!
-[2022-01-04T14:20:46.155] [WARN] myWarn - Usuario ya existe!
-[2022-01-04T14:20:50.299] [WARN] myWarn - Usuario ya existe!
-[2022-01-04T14:20:55.426] [WARN] myWarn - Password incorrecto!
-[2022-01-04T14:21:00.515] [WARN] myWarn - Ruta /styles.css método GET no implementado
-[2022-01-04T14:22:30.148] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-04T14:23:50.180] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-04T14:24:12.132] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-04T14:24:19.848] [WARN] myWarn - Password incorrecto!
-[2022-01-04T14:25:10.161] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-04T14:25:45.032] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-04T14:29:02.722] [WARN] myWarn - Ruta /auth/login método GET no implementado
-[2022-01-04T14:29:32.919] [WARN] myWarn - Ruta /auth/login método GET no implementado
-[2022-01-04T14:31:03.961] [WARN] myWarn - Unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
-    at ServerResponse.setHeader (_http_outgoing.js:558:11)
-    at ServerResponse.header (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\response.js:771:10)
-    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\response.js:170:12)
-    at ServerResponse.json (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\response.js:267:15)
-    at crearCompra (E:\Users\Fede\Documents\DESA\backend\controllers\comprasController.js:65:21)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2022-01-04T14:32:16.541] [WARN] myWarn - Unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
-    at ServerResponse.setHeader (_http_outgoing.js:558:11)
-    at ServerResponse.header (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\response.js:771:10)
-    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\response.js:170:12)
-    at ServerResponse.json (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\response.js:267:15)
-    at crearCompra (E:\Users\Fede\Documents\DESA\backend\controllers\comprasController.js:65:21)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2022-01-04T16:08:53.088] [WARN] myWarn - Ruta /compra/agregar/2 método GET no implementado
-[2022-01-04T16:09:33.043] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-04T16:10:08.020] [WARN] myWarn - Ruta /compra/agregar/1 método GET no implementado
-[2022-01-04T16:40:37.104] [WARN] myWarn - Ruta /styles.css método GET no implementado
-[2022-01-04T21:42:39.989] [WARN] myWarn - Ruta /login método POST no implementado
-[2022-01-04T21:42:50.001] [WARN] myWarn - Ruta /login método GET no implementado
-[2022-01-04T21:42:53.433] [WARN] myWarn - Ruta /login método POST no implementado
-[2022-01-04T21:43:20.459] [WARN] myWarn - Ruta /login método POST no implementado
-[2022-01-04T22:09:10.244] [WARN] myWarn - Unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
-    at ServerResponse.setHeader (_http_outgoing.js:558:11)
-    at ServerResponse.header (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\response.js:771:10)
-    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\response.js:170:12)
-    at ServerResponse.json (E:\Users\Fede\Documents\DESA\backend\node_modules\express\lib\response.js:267:15)
-    at crearCompra (E:\Users\Fede\Documents\DESA\backend\controllers\comprasController.js:83:21)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2022-01-04T22:09:10.994] [WARN] myWarn - Authenticate
-[2022-01-04T22:09:11.026] [WARN] myWarn - Authenticate
-[2022-01-05T08:48:08.165] [WARN] myWarn - Ruta /favicon.ico método GET no implementado
-[2022-01-05T08:48:11.322] [WARN] myWarn - Ruta /styles.css método GET no implementado
-[2022-01-05T08:48:22.572] [WARN] myWarn - Usuario ya existe!
-[2022-01-05T08:51:45.693] [WARN] myWarn - Ruta /img/1641316898654_fede.jpg método GET no implementado
-[2022-01-05T09:02:17.102] [WARN] myWarn - Ruta /img/1641316898654_fede.jpg método GET no implementado
-[2022-01-05T09:02:21.873] [WARN] myWarn - Ruta /img/1641316898654_fede.jpg método GET no implementado
-[2022-01-05T09:23:03.570] [WARN] myWarn - Authenticate
-[2022-01-05T09:23:03.637] [WARN] myWarn - Authenticate
+    at promiseOrCallback (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\mongoose\lib\index.js:1151:10)
+    at Mongoose.connect (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\mongoose\lib\index.js:329:20)
+    at Object.<anonymous> (E:\Users\Fede\Documents\DESA\backend\backend\contenedores\ContenedorMongo.js:5:10)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1155:10)
+[2022-03-13T21:55:59.721] [WARN] myWarn - Unhandled Rejection at: TypeError: Cannot read properties of undefined (reading 'id')
+    at asDto (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:36:21)
+    at MensajesRepo.deleteAll (E:\Users\Fede\Documents\DESA\backend\backend\repositorios\MensajesRepo.js:28:21)
+    at MensajesApi.eliminarMensajes (E:\Users\Fede\Documents\DESA\backend\backend\controllers\mensajesController.js:32:51)
+    at Socket.<anonymous> (E:\Users\Fede\Documents\DESA\backend\backend\services\sockets.js:24:47)
+    at Socket.emit (node:events:520:28)
+    at Socket.emitUntyped (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\Users\Fede\Documents\DESA\backend\backend\node_modules\socket.io\dist\socket.js:466:39
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2022-03-13T21:56:26.695] [WARN] myWarn - Unhandled Rejection at: TypeError: Cannot read properties of undefined (reading 'id')
+    at asDto (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:36:21)
+    at MensajesRepo.deleteAll (E:\Users\Fede\Documents\DESA\backend\backend\repositorios\MensajesRepo.js:28:21)
+    at MensajesApi.eliminarMensajes (E:\Users\Fede\Documents\DESA\backend\backend\controllers\mensajesController.js:32:51)
+    at Socket.<anonymous> (E:\Users\Fede\Documents\DESA\backend\backend\services\sockets.js:24:47)
+    at Socket.emit (node:events:520:28)
+    at Socket.emitUntyped (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\Users\Fede\Documents\DESA\backend\backend\node_modules\socket.io\dist\socket.js:466:39
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2022-03-13T21:56:50.809] [WARN] myWarn - Unhandled Rejection at: TypeError: Cannot read properties of undefined (reading 'id')
+    at asDto (E:\Users\Fede\Documents\DESA\backend\backend\mappers\mensajesMapper.js:36:21)
+    at MensajesRepo.deleteAll (E:\Users\Fede\Documents\DESA\backend\backend\repositorios\MensajesRepo.js:28:21)
+    at MensajesApi.eliminarMensajes (E:\Users\Fede\Documents\DESA\backend\backend\controllers\mensajesController.js:32:51)
+    at Socket.<anonymous> (E:\Users\Fede\Documents\DESA\backend\backend\services\sockets.js:24:47)
+    at Socket.emit (node:events:520:28)
+    at Socket.emitUntyped (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\Users\Fede\Documents\DESA\backend\backend\node_modules\socket.io\dist\socket.js:466:39
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)

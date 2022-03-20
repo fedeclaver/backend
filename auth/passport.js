@@ -1,43 +1,24 @@
-const bcrypt = require('bcrypt');
+
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
-const usuariosDao = require("../daos/usuarios/index.js");
+const usuarioController = require('../controllers/usuarioController');
 const config = require('../config/config');
 const transporterGmail = require('../email/gmail');
 const { loggerTrace, loggerInfo, loggerWarn, loggerError } = require('../utils/log4js');
+
+
+
+
 
 // LocalStrategy de "login"
 passport.use('login', new LocalStrategy({
     passReqToCallback: true
 },
-    async (req, username, password, done) => {
-        // chequeamos si el usuario existe en mongo
-        const user = await usuariosDao.getById({ 'usuario': username });
-
-        // si no existe
-        if (!user) {
-            loggerWarn.warn('Usuario no existe!')
-            return done(null, false, { msg: 'Usuario no existe!' });
-        }
-
-        // usuario existe pero esta mal la contraseña
-        if (!isValidPassword(user.password, password)) {
-            loggerWarn.warn('Password incorrecto!')
-            return done(null, false, { msg: 'Password incorrecto!' });
-        }
-
-        // Si todo OK
-        return done(null, user);
-
+    (req, username, password, done) => {
+        
+        usuarioController.login(username, password, done)
     }
 ))
-
-// validar password
-const isValidPassword = (userPassword, password) => {
-    return bcrypt.compareSync(password, userPassword)
-}
-
-
 passport.use('signup', new LocalStrategy({
     passReqToCallback: true
 },
@@ -73,8 +54,8 @@ passport.use('signup', new LocalStrategy({
             if (creausuario) {
                 //aviso log con Gmail
                 transporterGmail.sendMail({
-                    from: config.gmail.user,
-                    to:  config.gmail.admin,
+                    from: config.GMAIL_USER,
+                    to: config.ADMIN_EMAIL,
                     subject: 'Nuevo Registro de Usuario',
                     html: `
                         <p>Email: ${newUser.username}</p>
@@ -100,10 +81,7 @@ passport.use('signup', new LocalStrategy({
     }
 ));
 
-// hashear pass
-const createHash = (password) => {
-    return bcrypt.hashSync(password, bcrypt.genSaltSync(10), null);
-};
+
 
 
 // serializar

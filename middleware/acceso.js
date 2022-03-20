@@ -5,9 +5,11 @@ const { admin } = require('../config/config');
 const checkAuthentication = (req, res, next) => {
     try {
         if (req.isAuthenticated()) {
+            req.session.touch();
             next();
         } else {
-            res.json({ error: `No está autenticado.` })
+            return res.render('login.hbs', { msj: 'No está autenticado.' })
+           
 
         }
     } catch (error) {

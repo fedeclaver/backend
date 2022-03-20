@@ -54,10 +54,10 @@ const crearCompra = async (req, res) => {
                 }
                 loggerInfo.info(info);
             });
-
+         
             //envio whassap
             client.messages.create({
-              body: `Nuevo Pedido de ${req.user.username} - ${req.user.email}`,
+              body: `Nuevo Pedido de ${req.user.nombre} - ${req.user.usuario}`,
               from: `whatsapp:${config.TWILIO_NUM_WHATSAPP}`,
               to: `whatsapp:${config.ADMIN_WHATSAPP}`
           })

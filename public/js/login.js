@@ -1,90 +1,40 @@
-// login
-const formLogin = document.querySelector('#loginForm'),
-    inputEmail = document.getElementById('usuario'),
-    inputPassword = document.getElementById('password');
 
-formLogin.onsubmit = async (e) => {
-    e.preventDefault();
 
-    let formData = new FormData(formLogin)
-    let datosLogin = {
-        usuario: formData.get('usuario'),
-        password: formData.get('password')
+
+const btnLogin = document.getElementById("btnLogin");
+btnLogin.addEventListener("click", async (event) => {
+
+  let username = document.getElementById("username");
+  let password = document.getElementById("password");
+  event.preventDefault();
+  try {
+    const data = {
+      username: username.value,
+      password: password.value,
     };
-
-    try {
-        const response = await fetch(`/auth/login`, {
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            method: 'POST',
-            body: JSON.stringify(datosLogin)
-        });
-
-        const data = await response.json();
-
-        if (data.status == "success") {
-            alert('Login correcto');          
-
-            setTimeout(() => {
-                window.location.replace('/');
-            }, 1000);
-        } else {
-            alert('Login incorrecto');
+  fetch("/auth/login", { 
+    method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        redirect: "follow",
+        body: JSON.stringify(data),
+      }).then((res) => {
+        const getCookie = document.cookie;
+        console.log(getCookie);
+        if (!res) {
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Error de Usuario o Contraseña!'
+          })
+      
         }
-
-    } catch (error) {
-        console.log(error);
-    }
-};
-
-// registro
-const formRegister = document.querySelector('#registerForm'),
-    inputUsuario = document.getElementById('usuario'),
-    inputPassword = document.getElementById('password'),
-    inputNombre = document.getElementById('nombre'),
-    inputDireccion = document.getElementById('direccion'),
-    inputEdad = document.getElementById('edad'),
-    inputTelefono = document.getElementById('telefono'),
-    inputFoto = document.getElementById('foto');
-
-formRegister.onsubmit = async (e) => {
-    e.preventDefault();
-
-    let formData = new FormData(formRegister)
-    let datosRegistro = {
-        usuario: formData.get('usuario'),
-        password: formData.get('password'),
-        nombre: formData.get('nombre'),
-        direccion: formData.get('direccion'),
-        edad: formData.get('edad'),
-        telefono: formData.get('telefono'),
-        foto: formData.get('foto')
-    };
-
-    console.log(datosRegistro);
-
-    try {
-        const response = await fetch('/auth/signup', {
-            // headers: {
-            //     'Content-Type': 'application/json'
-            // },
-            method: 'POST',
-            body: datosRegistro
-        });
-
-        const data = await response.json();
-
-        if (data.status == "success") {
-            alert('Registro correcto');
-            setTimeout(() => {
-                window.location.replace('/');
-            }, 500);
-        } else {
-            alert('Registro incorrecto');
+        if (res.redirected) {
+          window.location.href = res.url;
         }
-
+      });
     } catch (error) {
-        console.log(error);
+      console.trace(error);
     }
-};
+  });

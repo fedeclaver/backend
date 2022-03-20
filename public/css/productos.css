@@ -1,0 +1,12 @@
+.countcontainer{ 
+    float: left!important;
+    border: 1px solid #e6e6e6;
+    border-radius:0.25rem;
+    overflow:hidden;
+    vertical-align:top;
+    padding:0.625rem
+}
+.item{
+    display:inline-block;
+    padding:0.625rem
+}
