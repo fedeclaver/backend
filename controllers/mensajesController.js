@@ -1,25 +1,25 @@
 const mensajesDao = require("../daos/mensajes/index.js");
-const { loggerTrace, loggerInfo, loggerWarn, loggerError } = require("../utils/log4js");
+
 const parse_obj = (obj) => JSON.parse(JSON.stringify(obj));
+
+// logger
+const { loggerTrace, loggerInfo, loggerWarn, loggerError } = require("../utils/log4js");
+
 
 // buscar Mensajes
 const obtenerMensajes = () => {
-  try {
-    let mensajes = mensajesDao.getAll();
-    return res.json(mensajes);
+  try {    
+    return  mensajesDao.getAll();
   } catch (error) {
     console.log(error);
-    res.status(500).json("Error obtener Mensajes");
+    return "Error obtener Mensajes";
   }
 };
 // Agrega un Mensaje
-const CrearMensaje = (mensaje) => {
+const CrearMensaje = async(mensaje) => {
   loggerTrace.trace("Ingreso a CrearMensaje");
   try {
-    let mensajes = mensajesDao.guardar(mensaje);
-    //console.log(mensaje)
-
-    return res.json(mensajes);
+    return await mensajesDao.save(mensaje);
   } catch (error) {
     console.log("Error en guardar mensaje", error);
   }
@@ -29,10 +29,7 @@ const CrearMensaje = (mensaje) => {
 const eliminarMensajes = () => {
   loggerTrace.trace("Ingreso a CrearMensaje");
   try {
-    let mensajes = mensajesDao.deleteAll();
-    //console.log(mensaje)
-
-    return res.json(mensajes);
+    return   mensajesDao.deleteAll();    
   } catch (error) {
     console.log("Error en guardar mensaje", error);
   }

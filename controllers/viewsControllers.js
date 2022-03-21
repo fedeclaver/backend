@@ -1,8 +1,8 @@
 const { loggerWarn, loggerTrace, loggerDefault, loggerError } = require("../utils/log4js");
 
-const failLogin = async (req, res, next) => {
+const vistafailLogin = async (req, res, next) => {
   try {
-    res.status(400).render("partial/failLogin");
+    return res.render("failLogin");
   } catch (error) {
     loggerError.error(error);
   }
@@ -33,20 +33,25 @@ const vistaMensajes = async (req, res, next) => {
 const vistaHome = async (req, res) => {
   loggerTrace.trace("Ingreso a vistalogin");
   try {
-    return res.render("login");
+    return res.render("productos");
   } catch (error) {
     loggerError.error(error);
     res.status(500).send("Hubo un error");
   }
 };
 /*Vistas de signUp */
-const signUp = (req, res, next) => {
+const vistaSignUp = (req, res, next) => {
   loggerTrace.trace("Ingreso a vista signUp");
   return res.render("signUp");
 };
 /*Vistas de error en signUp */
-const signUpError = (req, res, next) => {
-  res.render("/signUpError");
+const vistaSignUpError = (req, res, next) => {
+  return res.render("/signUpError");
+};
+/*Vistas de login */
+const vistaLogin = (req, res, next) => {
+  return res.render("/login");
 };
 
-module.exports = { vistaMensajes, vistaProductos, vistaHome, failLogin, signUp, signUpError };
+
+module.exports = { vistaMensajes, vistaProductos, vistaHome, vistafailLogin, vistaSignUp, vistaSignUpError ,vistaLogin};

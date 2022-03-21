@@ -7,11 +7,12 @@ const { checkAuthentication } = require("../middleware/acceso");
 const viewsController = require("../controllers/viewsControllers");
 
 /*Vistas de chat */
-router.get("/chat", checkAuthentication, viewsController.vistaMensajes);
-router.get("/agregar", checkAuthentication, viewsController.vistaProductos);
+router.get("/chat",  viewsController.vistaMensajes);
+router.get("/agregar",  viewsController.vistaProductos);
 //redirect al login
 router.get("/", viewsController.vistaHome);
-router.get("/failLogin", viewsController.failLogin);
-router.get("/signUp", viewsController.signUp);
-router.get("/signUpError", viewsController.signUpError);
+router.get("/login", viewsController.vistaLogin);
+router.get("/failLogin", viewsController.vistafailLogin);
+router.get("/signUp", viewsController.vistaSignUp);
+router.get("/signUpError", viewsController.vistaSignUpError);
 module.exports = router;

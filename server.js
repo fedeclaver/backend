@@ -13,7 +13,7 @@ const httpServer = http.createServer(app);
 const { Server: Socket } = require("socket.io");
 const io = new Socket(httpServer);
 
-const bodyParser = require("body-parser");
+
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
@@ -65,18 +65,20 @@ app.engine(
 app.set("views", "./views"); // especifica el directorio de vistas
 app.set("view engine", "hbs"); // registra el motor de plantillas
 
-// SOCKETS
-const webSocket = require("./routes/sockets");
+// SOCKETS 
+const webSocket = require('./services/sockets');
 const onConnection = (socket) => {
-  webSocket(io, socket);
-};
-io.on("connection", onConnection);
+      webSocket(io, socket);
+}
+io.on('connection', onConnection);
+
+
 
 app.use("/", mainRoutes);
 
 //Error de app
 app.use((err, req, res, next) => {
-  console.error(err.message);
+//loggerError.("err.message");
   return res.status(500).send("Se rompió todo");
 });
 

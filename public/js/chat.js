@@ -34,6 +34,7 @@ function render(mensajes) {
   
   // se ejecuta cuando enviamos un nuevo mensaje
   function addMessage(e) {
+    e.preventDefault()
     let mensajes = {
         author: {
             email: document.getElementById('email').value,
@@ -61,30 +62,6 @@ function render(mensajes) {
   
   
   
-  socket.on('mensajes', mensajesN => {
-    const mensajesNsize = JSON.stringify(mensajesN).length
-    console.log(mensajesN, mensajesNsize)
-  
-    const mensajesD = normalizr.denormalize(
-      mensajesN.result,
-      schemaMensajes,
-      mensajesN.entities
-    )
-  
-    const mensajesDsize = JSON.stringify(mensajesD).length
-    console.log(mensajesD, mensajesDsize)
-  
-    const porcentajeC = parseInt(
-      (Math.abs(mensajesDsize - mensajesNsize) * 100) / mensajesNsize
-    )
-    console.log(`Porcentaje de compresión ${porcentajeC}%`)
-    document.getElementById('centro_mensajes').innerText = porcentajeC
-  
-    console.log(mensajesD.mensajes)
-    const html = makeHtmlList(mensajesD.mensajes)
-    document.getElementById('mensajes').innerHTML = html
-  })
-  
   
   function makeHtmlList(mensajes) {
      if (mensajes.length > 0) {
@@ -104,36 +81,10 @@ function render(mensajes) {
     return ('<div><strong style="color: red;">Ups! Aún no hay mensajes..</strong> </div>')
   }
   }
+
   function deleteMensajes() {
     socket.emit('deleteMensajes', 'Todos los mensajes se han eliminado');
   }
   
   
-  
-  //-------------------------------------------------------------------------------------
-  
-  // MENSAJES
-  
-  /* --------------------- DESNORMALIZACIÓN DE MENSAJES ---------------------------- */
-  // Definimos un esquema de autor
-  const schemaAuthor = new normalizr.schema.Entity(
-    'author',
-    {},
-    { idAttribute: 'id' }
-  )
-  
-  // Definimos un esquema de mensaje
-  const schemaMensaje = new normalizr.schema.Entity(
-    'post',
-    { author: schemaAuthor },
-    { idAttribute: '_id' }
-  )
-  
-  // Definimos un esquema de posts
-  const schemaMensajes = new normalizr.schema.Entity(
-    'posts',
-    { mensajes: [schemaMensaje] },
-    { idAttribute: 'id' }
-  )
-  /* ----------------------------------------------------------------------------- */
   

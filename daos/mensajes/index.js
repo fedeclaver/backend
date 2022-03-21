@@ -12,7 +12,4 @@ switch (process.env.BASE) {
     mensajesDao = new MensajesDaoFirebase();
     break;
 }
-module.exports = function getMensajesDao() {
-  return mensajesDao
-}
-
+module.exports = mensajesDao;

@@ -49,7 +49,14 @@ class ContenedorMongo {
         return id
     }
     
-
+   //buscar 
+   async getByName(usuario) {
+    let doc = await this.coleccion.findOne({ 'usuario': usuario })
+    doc = parse_obj(doc)
+    return doc
+    
+}
+  
     //buscar todos los registros.
     async getAll() {
 

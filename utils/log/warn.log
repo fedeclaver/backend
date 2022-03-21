@@ -1,0 +1,38 @@
+[2022-03-20T19:38:22.423] [WARN] myWarn - Unhandled Rejection at: TypeError: mensajes.getAll is not a function
+    at Namespace.<anonymous> (E:\Users\Fede\Documents\DESA\backend\backend\server.js:78:42)
+    at Namespace.emit (node:events:520:28)
+    at Namespace.emitReserved (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at E:\Users\Fede\Documents\DESA\backend\backend\node_modules\socket.io\dist\namespace.js:141:26
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2022-03-20T19:39:49.495] [WARN] myWarn - Unhandled Rejection at: TypeError: mensajesDao.getAll is not a function
+    at Namespace.<anonymous> (E:\Users\Fede\Documents\DESA\backend\backend\server.js:78:45)
+    at Namespace.emit (node:events:520:28)
+    at Namespace.emitReserved (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at E:\Users\Fede\Documents\DESA\backend\backend\node_modules\socket.io\dist\namespace.js:141:26
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2022-03-20T19:41:29.490] [WARN] myWarn - Unhandled Rejection at: TypeError: mensajesDao.getAll is not a function
+    at Namespace.<anonymous> (E:\Users\Fede\Documents\DESA\backend\backend\server.js:78:45)
+    at Namespace.emit (node:events:520:28)
+    at Namespace.emitReserved (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at E:\Users\Fede\Documents\DESA\backend\backend\node_modules\socket.io\dist\namespace.js:141:26
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2022-03-20T19:41:39.063] [WARN] myWarn - Unhandled Rejection at: TypeError: mensajesDao.getAll is not a function
+    at Namespace.<anonymous> (E:\Users\Fede\Documents\DESA\backend\backend\server.js:78:45)
+    at Namespace.emit (node:events:520:28)
+    at Namespace.emitReserved (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at E:\Users\Fede\Documents\DESA\backend\backend\node_modules\socket.io\dist\namespace.js:141:26
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2022-03-20T19:49:17.499] [WARN] myWarn - Unhandled Rejection at: TypeError: mensajesController.getAll is not a function
+    at E:\Users\Fede\Documents\DESA\backend\backend\services\sockets.js:12:53
+    at module.exports (E:\Users\Fede\Documents\DESA\backend\backend\services\sockets.js:14:11)
+    at Namespace.onConnection (E:\Users\Fede\Documents\DESA\backend\backend\server.js:71:7)
+    at Namespace.emit (node:events:520:28)
+    at Namespace.emitReserved (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\socket.io\dist\typed-events.js:56:22)
+    at E:\Users\Fede\Documents\DESA\backend\backend\node_modules\socket.io\dist\namespace.js:141:26
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2022-03-20T21:42:56.411] [WARN] myWarn - Usuario ya existe!
+[2022-03-20T21:46:43.426] [WARN] myWarn - Usuario ya existe!
+[2022-03-20T21:47:02.889] [WARN] myWarn - Usuario ya existe!
+[2022-03-20T22:03:34.384] [WARN] myWarn - Faltó subir una foto de perfil
+[2022-03-20T22:12:33.980] [WARN] myWarn - Faltó subir una foto de perfil
+[2022-03-21T00:14:36.831] [WARN] myWarn - Usuario ya existe!

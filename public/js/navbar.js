@@ -1,5 +1,5 @@
 (async () => {
-    const response = await fetch('/auth/getUser');
+    const response = await fetch('/api/auth/getUser');
     const data = await response.json();
     if (Object.keys(data)[0] != 'error') {
         document.getElementById('user').innerHTML = `
@@ -8,7 +8,7 @@
                 <img src="  img/${data.foto}" width="45px" />
             `
         document.getElementById('btnLogout').innerHTML = `
-                <a  href="/auth/logout">Logout</a>
+                <a  href="/logout">Logout</a>
             `
     } else {
         document.getElementById('user').innerHTML = `

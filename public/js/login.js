@@ -12,7 +12,7 @@ btnLogin.addEventListener("click", async (event) => {
       username: username.value,
       password: password.value,
     };
-  fetch("/auth/login", { 
+  fetch("/api/login", { 
     method: "POST",
         headers: {
           "Content-Type": "application/json",

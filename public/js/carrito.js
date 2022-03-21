@@ -1,4 +1,4 @@
-fetch("/productos/listar")
+fetch("api/productos/listar")
   .then((resp) => resp.json())
   .then((productos) => {
     let html = "";
@@ -29,7 +29,7 @@ fetch("/productos/listar")
 function AgregarProducto(id) {
   let idCarrito = document.getElementById("idCarrito").value;
   if (idCarrito != "") {
-    fetch("/carritos/agregarProducto/" + idCarrito + "/" + id)
+    fetch("/api/carritos/agregarProducto/" + idCarrito + "/" + id)
       .then((res) => res.text())
       .then((res) => {
         alert(res);
@@ -56,7 +56,7 @@ function agregarCarrito() {
 }
 
 function getCarrito(id) {
-  fetch("/carritos/listar/" + id, {
+  fetch("/api/carritos/listar/" + id, {
     method: "GET",
   })
     .then((res) => res.text())
@@ -67,7 +67,7 @@ function getCarrito(id) {
     });
 }
 
-fetch("/carritos/listar")
+fetch("/api/carritos/listar")
   .then((resp) => resp.json())
   .then((carritos) => {
     let htmlheader = "",
@@ -133,7 +133,7 @@ fetch("/carritos/listar")
 
 function eliminarProductoCarrito(id, idc) {
   if (idc != "") {
-    fetch("/carritos/eliminarProducto/" + parseInt(idc) + "/" + parseInt(id))
+    fetch("/api/carritos/eliminarProducto/" + parseInt(idc) + "/" + parseInt(id))
       .then((res) => res.text())
       .then((res) => {
         alert(res);

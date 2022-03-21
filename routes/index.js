@@ -1,19 +1,17 @@
 const express = require('express');
-
-
 const router = express.Router();
 
 
 const productosRouter = require('./productos');
 const carritosRouter = require('./carritos');
-const loginRouter = require('./login');
+const auth = require('./auth');
 const compraRouter = require('./compra');
 const routesViews = require("./views");
-router.use('/auth', loginRouter)
-router.use("/productos", productosRouter);
-router.use("/compra", compraRouter);
-router.use("/carritos", carritosRouter);
+
+router.use('/api',  compraRouter,auth, carritosRouter,productosRouter)
 router.use("/", routesViews);
+
+
 
 
 
