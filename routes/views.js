@@ -2,7 +2,7 @@ const express = require("express");
 const { Router } = express;
 const router = new Router();
 
-const { checkAuthentication } = require("../middleware/acceso");
+const { checkAuthentication } = require("../middlewares/acceso");
 
 const viewsController = require("../controllers/viewsControllers");
 

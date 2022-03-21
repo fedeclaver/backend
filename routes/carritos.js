@@ -3,8 +3,8 @@ const { Router } = express;
 const router = new Router();
 //const requireAuth = require("../middleware/acceso.js");
 const carritoController = require("../controllers/carritoController");
-const {checkAuthentication} = require('../middleware/acceso');
-const {esAdmin} = require('../middleware/acceso');
+const {checkAuthentication} = require('../middlewares/acceso');
+const {esAdmin} = require('../middlewares/acceso');
 
 
 router.post("/agregar", esAdmin,checkAuthentication, carritoController.crearCarrito);

@@ -2,8 +2,8 @@ const express = require("express");
 const { Router } = express;
 const router = new Router();
 const productoController = require("../controllers/productoController");
-const {checkAuthentication} = require('../middleware/acceso');
-const {esAdmin} = require('../middleware/acceso');
+const {checkAuthentication} = require('../middlewares/acceso');
+const {esAdmin} = require('../middlewares/acceso');
 //api/productos
 router.post("/agregar", checkAuthentication,esAdmin,productoController.crearProducto);
 router.get("/agregar", checkAuthentication,esAdmin,productoController.agregarProducto);
