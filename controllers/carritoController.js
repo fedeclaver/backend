@@ -61,7 +61,7 @@ const agregarProducto = async (req, res) => {
   try {
     let carritos = await carritosDao.getAll();   
     carritos= JSON.parse(JSON.stringify(carritos)) 
-    res.status(200).render("carritos.hbs", {carritos})
+    res.json({carritos})
   } catch (error) {
     console.log(error);
     res.status(500).json("Error obtenerCarritos");

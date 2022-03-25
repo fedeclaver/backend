@@ -56,6 +56,10 @@ const vistaLogin = (req, res) => {
   loggerTrace.trace("Ingreso a vista Login");
   return res.render("login");
 };
+/*vistaCarrito*/
+const vistaCarrito = (req, res) => {
+  loggerTrace.trace("Ingreso a vista Carrito");
+  res.render("carrito", { layout: "index" });
+};
 
-
-module.exports = { vistaMensajes, vistaProductos, vistaHome, vistafailLogin, vistaSignUp, vistaSignUpError ,vistaLogin};
+module.exports = { vistaMensajes, vistaProductos, vistaHome, vistafailLogin, vistaSignUp, vistaSignUpError ,vistaLogin,vistaCarrito};

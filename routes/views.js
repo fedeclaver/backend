@@ -21,5 +21,5 @@ router.get("/login", viewsController.vistaLogin);
 router.get("/failLogin", viewsController.vistafailLogin);
 router.get("/signUp", viewsController.vistaSignUp);
 router.get("/signUpError", viewsController.vistaSignUpError);
-
+router.get("/carrito", viewsController.vistaCarrito);
 module.exports = router;

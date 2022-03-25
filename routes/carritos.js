@@ -10,7 +10,7 @@ const { authorization} = require("../utils/jwt.js");
 
 router.post("/carrito/agregar", authorization, carritoController.crearCarrito);
 
-router.get("/carrito/listar", authorization, carritoController.obtenerCarritos);
+router.get("/carrito/", authorization, carritoController.obtenerCarritos);
 
 router.get("/carrito/:id", authorization, carritoController.obtenerCarrito);
 
