@@ -1,0 +1,3 @@
+[2022-03-24T10:31:50.745] [ERROR] myError - ReferenceError: render is not defined
+    at obtenerProductos (E:\Users\Fede\Documents\DESA\backend\backend\controllers\productoController.js:51:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)

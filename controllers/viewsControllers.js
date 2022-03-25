@@ -1,6 +1,6 @@
 const { loggerWarn, loggerTrace, loggerDefault, loggerError } = require("../utils/log4js");
 
-const vistafailLogin = async (req, res, next) => {
+const vistafailLogin = async (req, res) => {
   try {
     return res.render("failLogin");
   } catch (error) {
@@ -8,10 +8,12 @@ const vistafailLogin = async (req, res, next) => {
   }
 };
 
-const vistaProductos = async (req, res, next) => {
-  loggerTrace.trace("Ingreso a vistaAgregarProductos");
-  try {
-    res.render("agregar", { layout: "index" });
+const vistaProductos = async (req, res) => {
+  loggerTrace.trace("Ingreso a vistaProductos"); try {
+
+
+
+    res.render("productos", { layout: "index" });
   } catch (error) {
     loggerError.error(error);
     res.status(500).send("Hubo un error");
@@ -19,7 +21,7 @@ const vistaProductos = async (req, res, next) => {
 };
 
 /*Vistas de chat */
-const vistaMensajes = async (req, res, next) => {
+const vistaMensajes = async (req, res) => {
   loggerTrace.trace("Ingreso a vistaMensajes");
   try {
     res.render("chat", { layout: "index" });
@@ -31,26 +33,28 @@ const vistaMensajes = async (req, res, next) => {
 
 /*Vistas de login */
 const vistaHome = async (req, res) => {
-  loggerTrace.trace("Ingreso a vistalogin");
+  loggerTrace.trace("Ingreso a vista Home");
   try {
-    return res.render("productos");
+    return res.render("main");
   } catch (error) {
     loggerError.error(error);
     res.status(500).send("Hubo un error");
   }
 };
 /*Vistas de signUp */
-const vistaSignUp = (req, res, next) => {
+const vistaSignUp = (req, res) => {
   loggerTrace.trace("Ingreso a vista signUp");
   return res.render("signUp");
 };
 /*Vistas de error en signUp */
-const vistaSignUpError = (req, res, next) => {
+const vistaSignUpError = (req, res) => {
+  loggerTrace.trace("Ingreso a vista SignUpError");
   return res.render("/signUpError");
 };
 /*Vistas de login */
-const vistaLogin = (req, res, next) => {
-  return res.render("/login");
+const vistaLogin = (req, res) => {
+  loggerTrace.trace("Ingreso a vista Login");
+  return res.render("login");
 };
 
 

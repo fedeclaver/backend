@@ -4,7 +4,7 @@ SignUpform.addEventListener('submit', async e => {
   e.preventDefault()
 
   const datos = {
-    email: SignUpform[0].value,
+    username: SignUpform[0].value,
     password: SignUpform[1].value,
     nombre: SignUpform[2].value,
     direccion: SignUpform[3].value,
@@ -28,7 +28,5 @@ SignUpform.addEventListener('submit', async e => {
   if (access_token) {
     localStorage.setItem("access_token", access_token);
     location.href = '/'
-  } else {
-    location.href = '/signUpError'
-  }
+  } 
 })

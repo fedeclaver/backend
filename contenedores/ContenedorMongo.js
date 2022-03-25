@@ -32,21 +32,10 @@ class ContenedorMongo {
 
 
     async save(object) {
-        //Recibe un objeto, lo inserta en la tabla.
-        let id
-        let resp
-        const cantidad = await this.coleccion.find({}).count()
-        if (cantidad == 0){
-            id = 1
-        }
-        else{
-            resp = await this.coleccion.find({},{_id:0,id:1}).sort({id:-1}).limit(1) //obtiene el maximo id
-            id = resp[0].id + 1 //determina el proximo id
-        }
-        object.id = id //inserta id en el objeto
-        const usuarioSaveModel = new this.coleccion(object)
-        await usuarioSaveModel.save()
-        return id
+        //Recibe un objeto, lo inserta en la tabla.   
+        let doc = await this.coleccion.create(object);
+        doc = parse_obj(doc)
+        return doc
     }
     
    //buscar 

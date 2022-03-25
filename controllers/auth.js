@@ -2,38 +2,48 @@ const transporterGmail = require("../email/gmail");
 const usuariosDao = require("../daos/usuarios/index.js");
 const dayjs = require("dayjs");
 const config = require("../config/config");
-const { generateAuthToken } = require("../utils/jwt.js");
+const { generateAuthToken} = require("../utils/jwt.js");
 const { loggerTrace, loggerInfo, loggerWarn, loggerError } = require('../utils/log4js');
 const bcrypt = require('bcrypt');
+const parse_obj = obj => JSON.parse(JSON.stringify(obj))
 
-const getUser = async (req, res, next) => {
-  try {
-    if (req.isAuthenticated()) {
-      return res.json(
-        req.user ?? res.render("index", { title: "login", layout: false })
-      );
-    }
-  } catch (error) {
-    loggerWarn.warn(error.message);
-  }
+
+// validar password
+const isValidPassword = (userPassword, password) => {
+  return bcrypt.compareSync(password, userPassword)
+}
+
+
+
+
+
+
+const logIn = async (req, res) => {
+  loggerTrace.trace("Ingreso a Login Usuario");
+// chequeamos si el usuario existe en mongo
+const user = await usuariosDao.getByName(req.body.username);
+
+// si no existe
+if (!user) {
+    loggerWarn.warn('Usuario no existe!')
+    res.status(404).json({ msg: 'Usuario no existe!' })  
+}
+
+// usuario existe pero esta mal la contraseña
+
+if (!isValidPassword(user.password, req.body.password)) {
+    loggerWarn.warn('Password incorrecto!')
+     res.status(404).json({ msg: 'Password incorrecto!' })  
+}
+  loggerWarn.warn('Usuario loguin' + req.body.username)  
+    const access_token = generateAuthToken(user)
+ ;
+    res.status(200).json({'user':(user.usuario), 'access_token' :(access_token) } );
+   
+  
 };
 
-const logIn = async (req, res, next) => {
-  if (req.isAuthenticated()) {
-    console.log("Usuario logueado");
-    const loggedUsername = req.session.user;
-    console.log(loggedUsername);
-
-    return res.render("index", { title: "login", layout: false });
-  } else {
-    console.log("Usuario no logueado");
-
-    res.render("login", { title: "login", layout: false });
-    return;
-  }
-};
-
-const logOut = async (req, res, next) => {
+const logOut = async (req, res) => {
   try {
     console.log("Ingresó a Logout");
     // creamos el usuario
@@ -47,7 +57,7 @@ const logOut = async (req, res, next) => {
     });
 
     req.logout();
-    res.render("logout", { username: usuario });
+    return res.render("logout", { username: usuario });
   } catch (error) {
     console.log(error);
   }
@@ -56,32 +66,33 @@ const logOut = async (req, res, next) => {
 const signUp = async (req, res) => {
   try {
     console.log("Ingresó a signUp");
-    let email  = req.body.email;
+    let username  = req.body.username;
     //valido el mail del usuario
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(email)) {
-      res.json({ msj: "Mail invalido" });
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(username)) {
+       return res.render("signUpResult", { msj: "Mail invalido" ,titulo : "sign Up Error"});
     }
     // buscar en mongo el usuario
-    const usuario = await usuariosDao.getByName(email);
+    const usuario = await usuariosDao.getByName(username);
 
     if (usuario) {
       loggerWarn.warn("Usuario ya existe!");
-      res.json({ msj: "el nombre de usuario ya existe" });
+      return res.render("signUpResult", { msj: 'Usuario ya existe',titulo : "sign Up Error" });
     }
-    // if (!req.file) {
-    //   loggerWarn.warn("Faltó subir una foto de perfil");
-    //   res.json({ msj: "Faltó subir una foto de perfil" });
-    // }
+     if (!req.file) {
+       loggerWarn.warn("Faltó subir una foto de perfil");
+       return res.render("signUpResult",{ msj: "Faltó subir una foto de perfil" ,titulo : "sign Up Error"});
+     }
     // creamos el usuario
     const newUser = {
-      usuario: req.body.email,
+      usuario: req.body.username,
       password: createHash(req.body.password),
       nombre: req.body.nombre,
       direccion: req.body.direccion,
       edad: req.body.edad,
       telefono: req.body.telefono,
+      foto: req.file.filename
     };
-    const access_token = generateAuthToken(req.body.email);
+    const access_token = generateAuthToken(req.body.username);
     const creausuario = await usuariosDao.save(newUser);
     if (creausuario) {
       //aviso log con Gmail
@@ -107,8 +118,8 @@ const signUp = async (req, res) => {
         }
       );
     }
+    return res.render("signUpResult",{ access_token ,titulo : "sign Up ok"});
 
-    res.json({ access_token });
   } catch (error) {
     console.log(error);
   }
@@ -119,4 +130,4 @@ const createHash = (password) => {
   return bcrypt.hashSync(password, bcrypt.genSaltSync(10), null);
 };
 
-module.exports = { getUser, logIn, logOut, signUp };
+module.exports = {  logIn, logOut, signUp };

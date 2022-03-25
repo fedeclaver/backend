@@ -1,35 +1,61 @@
+/**
+ * Required modules.
+ */
 //logger
 const { loggerTrace, loggerInfo, loggerWarn, loggerError } = require("./utils/log4js.js");
+/*create server */
 const express = require("express");
 const http = require("http");
-const { mongodb, template } = require("./config/config.js");
 
+//database 
+const {mongodb} = require("./config/config.js");
+// module express Hbs
 const handlebars = require("express-handlebars");
-
-const app = express();
-const httpServer = http.createServer(app);
-
 //socket
 const { Server: Socket } = require("socket.io");
-const io = new Socket(httpServer);
-
-
-const cookieParser = require("cookie-parser");
+//session express
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-const path = require("path");
-//routes
-const mainRoutes = require("./routes/index");
 //passport
 const passport = require("passport");
-// Init Session
+//cors 
+const cors = require("cors");
+
+const path = require("path");
+
+
+//routes
+const mainRoutes = require("./routes/index");
+
+
+// Dotenv initialization.
+
+// SOCKETS 
+const webSocket = require('./services/sockets');
+
+
+// Create the express app.
+const app = express();
+
+const httpServer = http.createServer(app);
+
+
+const io = new Socket(httpServer);
+
+app.use(cors());
+
+
+// for parsing application/json
 app.use(express.json());
+// for parsing application/x-www-form-urlencoded
+
 app.use(express.urlencoded({ extended: true }));
-app.use(cookieParser());
+// for parsing multipart/form-data
+app.use(express.static(process.cwd() + "/public"));
+
+// Init Session
+
 app.use(
   session({
     store: MongoStore.create({
@@ -50,7 +76,8 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use(express.static(process.cwd() + "/public"));
+
+
 app.engine(
   "hbs",
   handlebars({
@@ -65,8 +92,6 @@ app.engine(
 app.set("views", "./views"); // especifica el directorio de vistas
 app.set("view engine", "hbs"); // registra el motor de plantillas
 
-// SOCKETS 
-const webSocket = require('./services/sockets');
 const onConnection = (socket) => {
       webSocket(io, socket);
 }
@@ -79,9 +104,10 @@ app.use("/", mainRoutes);
 //Error de app
 app.use((err, req, res, next) => {
 //loggerError.("err.message");
-  return res.status(500).send("Se rompió todo");
+  //return res.status(500).send("Se rompió todo");
 });
 
+// Catch 404 errors and forward them to the error handler.
 app.use((req, res, next) => {
   //loggerWarn.warn(`Ruta ${req.originalUrl} método ${req.method} no implementado`)
   // res.status(404).json({ error: -2, descripcion: `ruta ${req.originalUrl} método ${req.method} no implementado` });

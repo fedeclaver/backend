@@ -6,7 +6,7 @@ class CarritosDaoMongo extends ContenedorMongo {
 
     constructor() {
         super('carritos', {
-            id: { type: Number, required: true },           
+            id: { type: String, required: true },           
             timestamp: {type: String, required: true },
             productos:[{
                 id: { type: Number, required: true },

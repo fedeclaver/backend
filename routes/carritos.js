@@ -3,21 +3,22 @@ const { Router } = express;
 const router = new Router();
 //const requireAuth = require("../middleware/acceso.js");
 const carritoController = require("../controllers/carritoController");
-const {checkAuthentication} = require('../middlewares/acceso');
-const {esAdmin} = require('../middlewares/acceso');
+
+const { authorization} = require("../utils/jwt.js");
 
 
-router.post("/agregar", esAdmin,checkAuthentication, carritoController.crearCarrito);
 
-router.get("/listar", esAdmin,checkAuthentication, carritoController.obtenerCarritos);
+router.post("/carrito/agregar", authorization, carritoController.crearCarrito);
 
-router.get("/listar/:id", esAdmin,checkAuthentication, carritoController.obtenerCarrito);
+router.get("/carrito/listar", authorization, carritoController.obtenerCarritos);
 
-router.get("/agregarProducto/:idCarrito/:id_prod",   checkAuthentication, esAdmin,  carritoController.agregarProducto);
+router.get("/carrito/:id", authorization, carritoController.obtenerCarrito);
 
-router.get("/eliminarProducto/:idCarrito/:id_prod",checkAuthentication, esAdmin,checkAuthentication, carritoController.eliminarProducto);
+router.get("/carrito/agregar/:idCarrito/:id_prod",authorization,carritoController.agregarProducto);
 
-router.delete("/borrar/:id",esAdmin,checkAuthentication, carritoController.eliminarCarrito);
+router.get("/carrito/eliminar/:idCarrito/:id_prod",authorization, carritoController.eliminarProducto);
+
+router.delete("/carrito/borrar/:id",authorization, carritoController.eliminarCarrito);
 
 
 

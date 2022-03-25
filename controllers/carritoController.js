@@ -31,7 +31,9 @@ const agregarProducto = async (req, res) => {
   try {
     let carrito = await carritosDao.getById(req.params.idCarrito);
     if (!carrito) {
-      res.status(404).json({ msg: "Carrito no encontrado" });
+      let objeto = {productos: []}
+        objeto = Object.assign({ id:req.params.idCarrito,timestamp: Date.now() , objeto });      
+         const idCarrito = await carritosDao.save(objeto);
     }
     let producto = await productosDao.getById(req.params.id_prod);
     if (!producto) {

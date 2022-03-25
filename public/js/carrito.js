@@ -1,4 +1,20 @@
-fetch("api/productos/listar")
+
+async function fetchProductJSON(data) {
+  const response = await  fetch("/api/productos", { 
+    method: 'GET',
+    headers: {
+      'authorization': `Bearer ${localStorage.getItem('access_token')}`
+    },
+        redirect: "follow",
+        body: JSON.stringify(data),
+      })
+  const token = await response.json();
+  return token;
+}
+
+
+
+fetchProductJSON(productos)
   .then((resp) => resp.json())
   .then((productos) => {
     let html = "";
@@ -26,18 +42,7 @@ fetch("api/productos/listar")
     document.getElementById("productosCard").innerHTML = html;
   });
 
-function AgregarProducto(id) {
-  let idCarrito = document.getElementById("idCarrito").value;
-  if (idCarrito != "") {
-    fetch("/api/carritos/agregarProducto/" + idCarrito + "/" + id)
-      .then((res) => res.text())
-      .then((res) => {
-        alert(res);
-        location.reload();
-        return false;
-      });
-  }
-}
+
 
 function agregarCarrito() {
   fetch("/carritos/agregar/", {
@@ -45,6 +50,7 @@ function agregarCarrito() {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
+      'authorization': `Bearer ${localStorage.getItem('access_token')}`
     },
   })
     .then((res) => res.text())
@@ -57,7 +63,11 @@ function agregarCarrito() {
 
 function getCarrito(id) {
   fetch("/api/carritos/listar/" + id, {
-    method: "GET",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      'authorization': `Bearer ${localStorage.getItem('access_token')}`
+    },
   })
     .then((res) => res.text())
     .then((res) => {
@@ -67,7 +77,14 @@ function getCarrito(id) {
     });
 }
 
-fetch("/api/carritos/listar")
+
+fetch("/api/carritos/listar/", {
+  method: "GET",
+  headers: {
+    Accept: "application/json",
+    "Content-Type": "application/json",
+    'authorization': `Bearer ${localStorage.getItem('access_token')}`
+  }
   .then((resp) => resp.json())
   .then((carritos) => {
     let htmlheader = "",
@@ -129,11 +146,17 @@ fetch("/api/carritos/listar")
     }
 
     document.getElementById("carritos").innerHTML = html;
-  });
-
+  })
+})
 function eliminarProductoCarrito(id, idc) {
   if (idc != "") {
-    fetch("/api/carritos/eliminarProducto/" + parseInt(idc) + "/" + parseInt(id))
+    fetch("/api/carritos/eliminarProducto/" + parseInt(idc) + "/" + parseInt(id)), {
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        'authorization': `Bearer ${localStorage.getItem('access_token')}`
+      },
+    }    
       .then((res) => res.text())
       .then((res) => {
         alert(res);

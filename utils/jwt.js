@@ -7,7 +7,7 @@ function generateAuthToken(nombre) {
   return token;
 }
 
-function auth(req, res, next) {
+function authorization(req, res, next) {
   const authHeader = req.headers["authorization"] || req.headers["Authorization"] || '';
 
   if (!authHeader) {
@@ -38,7 +38,10 @@ function auth(req, res, next) {
   next();
 }
 
+
+
+
 module.exports = {
   generateAuthToken,
-  auth
+  authorization
 }

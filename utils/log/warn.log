@@ -36,3 +36,210 @@
 [2022-03-20T22:03:34.384] [WARN] myWarn - Faltó subir una foto de perfil
 [2022-03-20T22:12:33.980] [WARN] myWarn - Faltó subir una foto de perfil
 [2022-03-21T00:14:36.831] [WARN] myWarn - Usuario ya existe!
+[2022-03-22T18:50:56.675] [WARN] myWarn - Unhandled Rejection at: Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.zyvdl.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:dns:213:19)
+    at QueryReqWrap.callbackTrampoline (node:internal/async_hooks:130:17)
+[2022-03-23T10:28:39.509] [WARN] myWarn - Unhandled Rejection at: ReferenceError: username is not defined
+    at logIn (E:\Users\Fede\Documents\DESA\backend\backend\controllers\auth.js:27:42)
+    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\index.js:47:12)
+[2022-03-23T10:33:56.916] [WARN] myWarn - Unhandled Rejection at: ReferenceError: username is not defined
+    at logIn (E:\Users\Fede\Documents\DESA\backend\backend\controllers\auth.js:27:42)
+    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\router\index.js:47:12)
+[2022-03-23T10:34:49.629] [WARN] myWarn - Usuario no existe!
+[2022-03-23T10:34:49.631] [WARN] myWarn - Unhandled Rejection at: ReferenceError: done is not defined
+    at logIn (E:\Users\Fede\Documents\DESA\backend\backend\controllers\auth.js:32:5)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-03-23T11:19:56.755] [WARN] myWarn - Usuario no existe!
+[2022-03-23T11:57:30.637] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T11:58:24.800] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T15:49:13.593] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T15:52:24.149] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T15:59:51.874] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T16:00:26.046] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T16:29:34.750] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T16:31:31.441] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T16:32:23.141] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T16:32:46.056] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T16:37:58.069] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T16:40:43.668] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T16:41:07.107] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T16:41:49.643] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T16:43:08.880] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T16:43:17.510] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T16:43:40.278] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T17:02:19.372] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T17:02:37.514] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T17:11:03.981] [WARN] myWarn - Usuario no existe!
+[2022-03-23T17:13:20.461] [WARN] myWarn - Usuario no existe!
+[2022-03-23T17:15:01.131] [WARN] myWarn - Usuario no existe!
+[2022-03-23T17:15:08.341] [WARN] myWarn - Usuario no existe!
+[2022-03-23T17:16:47.869] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T17:24:28.378] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T17:24:43.244] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T17:33:17.613] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T17:33:57.271] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T17:35:53.965] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T17:36:30.376] [WARN] myWarn - Usuario ya existe!
+[2022-03-23T18:21:21.731] [WARN] myWarn - Usuario no existe!
+[2022-03-23T18:21:27.736] [WARN] myWarn - Usuario no existe!
+[2022-03-23T22:19:08.530] [WARN] myWarn - Usuario no existe!
+[2022-03-23T22:25:31.759] [WARN] myWarn - Usuario no existe!
+[2022-03-23T22:45:54.623] [WARN] myWarn - Usuario no existe!
+[2022-03-23T22:46:19.042] [WARN] myWarn - Usuario no existe!
+[2022-03-23T23:03:35.237] [WARN] myWarn - Usuario no existe!
+[2022-03-23T23:03:45.782] [WARN] myWarn - Usuario no existe!
+[2022-03-23T23:04:03.896] [WARN] myWarn - Usuario no existe!
+[2022-03-24T07:06:16.445] [WARN] myWarn - Usuario no existe!
+[2022-03-24T07:08:34.654] [WARN] myWarn - Usuario no existe!
+[2022-03-24T07:14:09.396] [WARN] myWarn - Usuario no existe!
+[2022-03-24T07:17:50.741] [WARN] myWarn - Usuario no existe!
+[2022-03-24T07:25:12.525] [WARN] myWarn - Usuario no existe!
+[2022-03-24T07:25:29.659] [WARN] myWarn - Usuario no existe!
+[2022-03-24T07:27:27.248] [WARN] myWarn - Usuario no existe!
+[2022-03-24T07:32:08.866] [WARN] myWarn - Usuario ya existe!
+[2022-03-24T07:32:33.705] [WARN] myWarn - Unhandled Rejection at: ReferenceError: isValidPassword is not defined
+    at logIn (E:\Users\Fede\Documents\DESA\backend\backend\controllers\auth.js:37:1)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-03-24T07:36:32.427] [WARN] myWarn - Usuario logueadoundefined
+[2022-03-24T07:40:00.390] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T07:47:30.670] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T07:47:33.408] [WARN] myWarn - Unhandled Rejection at: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: {
+  user: [Object],
+  access_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOnsiX2lkIjoiNjIzYzQ3YWQ1MmRhMTZiYTBjNmI4ODA1IiwidXN1YXJpbyI6ImZlZGVjbGF2ZXIyQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJFpkLzJyc3I4eWt3TU9BLjBGenVWNWVQWURoam9rOU8xYmhSczVMcW9mcXZjcGVOUG0vdWZlIiwibm9tYnJlIjoiTW9uaWNhIiwiZGlyZWNjaW9uIjoiQkFIw41BIEJMQU5DQSA4NzUgOSBDIiwiZWRhZCI6IjQ0IiwidGVsZWZvbm8iOiIwMzUxNjc4NTY3OCIsImZvdG8iOiIxNjQ4MTE3Njc3ODMzX1VudGl0bGVkLTEucG5nIiwiZGF0ZV9yZWdpc3RlcmVkIjoiMjAyMi0wMy0yNFQxMDoyNzo1Ny45MDNaIiwiX192IjowfSwiaWF0IjoxNjQ4MTE4ODUzLCJleHAiOjE2NDgyMDUyNTN9.1qgMZw8EQg45SKVSH6B4t--Ff4IW_FIq-QAc5WnFx64'
+}
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.writeHead (node:_http_server:274:11)
+    at ServerResponse.writeHead (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\on-headers\index.js:44:26)
+    at ServerResponse._implicitHeader (node:_http_server:265:8)
+    at write_ (node:_http_outgoing:766:9)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at ServerResponse.end (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express-session\index.js:359:19)
+    at ServerResponse.redirect (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:951:10)
+    at logIn (E:\Users\Fede\Documents\DESA\backend\backend\controllers\auth.js:58:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-03-24T07:50:05.744] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T07:50:45.730] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T07:51:56.153] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T07:58:49.124] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T07:59:56.504] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T08:06:18.419] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T08:06:51.503] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T08:09:33.928] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T08:10:47.448] [WARN] myWarn - Password incorrecto!
+[2022-03-24T08:10:47.450] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T08:10:50.989] [WARN] myWarn - Unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.setHeader (node:_http_outgoing:576:11)
+    at ServerResponse.header (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:267:15)
+    at logIn (E:\Users\Fede\Documents\DESA\backend\backend\controllers\auth.js:59:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-03-24T08:15:13.406] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T08:15:45.543] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T08:23:19.511] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T08:23:42.590] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T08:31:09.294] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T08:34:57.789] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T08:34:57.794] [WARN] myWarn - Unhandled Rejection at: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: fedeclaver2@gmail.com
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.writeHead (node:_http_server:274:11)
+    at ServerResponse.writeHead (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\on-headers\index.js:44:26)
+    at ServerResponse._implicitHeader (node:_http_server:265:8)
+    at write_ (node:_http_outgoing:766:9)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at ServerResponse.end (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express-session\index.js:359:19)
+    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:221:10)
+    at ServerResponse.json (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:267:15)
+    at logIn (E:\Users\Fede\Documents\DESA\backend\backend\controllers\auth.js:52:21)
+[2022-03-24T08:35:51.098] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T08:35:51.104] [WARN] myWarn - Unhandled Rejection at: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: fedeclaver2@gmail.com
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.writeHead (node:_http_server:274:11)
+    at ServerResponse.writeHead (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\on-headers\index.js:44:26)
+    at ServerResponse._implicitHeader (node:_http_server:265:8)
+    at write_ (node:_http_outgoing:766:9)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at ServerResponse.end (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express-session\index.js:359:19)
+    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:221:10)
+    at ServerResponse.json (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:267:15)
+    at logIn (E:\Users\Fede\Documents\DESA\backend\backend\controllers\auth.js:52:21)
+[2022-03-24T08:37:01.714] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T08:37:01.717] [WARN] myWarn - Unhandled Rejection at: TypeError: Assignment to constant variable.
+    at logIn (E:\Users\Fede\Documents\DESA\backend\backend\controllers\auth.js:51:10)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-03-24T08:39:52.113] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T08:40:02.121] [WARN] myWarn - Unhandled Rejection at: TypeError: Assignment to constant variable.
+    at logIn (E:\Users\Fede\Documents\DESA\backend\backend\controllers\auth.js:51:6)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-03-24T08:40:48.975] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T08:40:55.520] [WARN] myWarn - Unhandled Rejection at: TypeError: Assignment to constant variable.
+    at logIn (E:\Users\Fede\Documents\DESA\backend\backend\controllers\auth.js:51:6)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-03-24T08:41:43.086] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T08:41:54.740] [WARN] myWarn - Unhandled Rejection at: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: "fedeclaver2@gmail.com"
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.writeHead (node:_http_server:274:11)
+    at ServerResponse.writeHead (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\on-headers\index.js:44:26)
+    at ServerResponse._implicitHeader (node:_http_server:265:8)
+    at write_ (node:_http_outgoing:766:9)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at ServerResponse.end (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express-session\index.js:359:19)
+    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:221:10)
+    at ServerResponse.json (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:267:15)
+    at logIn (E:\Users\Fede\Documents\DESA\backend\backend\controllers\auth.js:52:21)
+[2022-03-24T08:44:13.064] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T09:55:07.066] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T09:56:14.710] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T09:59:07.120] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T10:01:06.078] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T10:01:28.921] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T10:02:08.683] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T10:03:25.679] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T10:03:40.591] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T10:18:31.525] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T10:22:42.742] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T10:33:58.510] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T10:34:26.435] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T10:35:00.215] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T10:42:56.639] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T10:56:12.596] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T11:01:57.714] [WARN] myWarn - Usuario loguinfedeclaver2@gmail.com
+[2022-03-24T20:31:30.992] [WARN] myWarn - Unhandled Rejection at: MongooseServerSelectionError: connection timed out
+    at NativeConnection.Connection.openUri (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\mongoose\lib\connection.js:797:32)
+    at E:\Users\Fede\Documents\DESA\backend\backend\node_modules\mongoose\lib\index.js:330:10
+    at E:\Users\Fede\Documents\DESA\backend\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\mongoose\lib\index.js:1151:10)
+    at Mongoose.connect (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\mongoose\lib\index.js:329:20)
+    at Object.<anonymous> (E:\Users\Fede\Documents\DESA\backend\backend\contenedores\ContenedorMongo.js:5:10)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1155:10)
+[2022-03-24T22:41:20.273] [WARN] myWarn - Unhandled Rejection at: MongooseServerSelectionError: connection timed out
+    at NativeConnection.Connection.openUri (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\mongoose\lib\connection.js:797:32)
+    at E:\Users\Fede\Documents\DESA\backend\backend\node_modules\mongoose\lib\index.js:330:10
+    at E:\Users\Fede\Documents\DESA\backend\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\mongoose\lib\index.js:1151:10)
+    at Mongoose.connect (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\mongoose\lib\index.js:329:20)
+    at Object.<anonymous> (E:\Users\Fede\Documents\DESA\backend\backend\contenedores\ContenedorMongo.js:5:10)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1155:10)

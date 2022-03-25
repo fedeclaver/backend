@@ -7,8 +7,8 @@ module.exports = {
   },
   admin: true,
   mongodb: {
-    cnxStr: process.env.MONGO_ATLAS,
-    // cnxStr:'mongodb://localhost:27017/ecommerce',
+    //cnxStr: process.env.MONGO_ATLAS,
+     cnxStr:'mongodb://localhost:27017/ecommerce',
     options: {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -20,12 +20,7 @@ module.exports = {
     pass: process.env.GMAIL_PASS,
     admin: process.env.GMAIL_ADMIN,
   },
-  template: {
-    extname: ".hbs",
-    defaultLayout: "index.hbs",
-    layoutsDir: process.cwd() + "/src/views/layouts",
-    partialsDir: process.cwd() + "/src/views/partials",
-  },
+
   firebase: {
     type: process.env.FIREBASE_type,
     project_id: process.env.FIREBASE_project_id,

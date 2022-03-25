@@ -46,9 +46,7 @@ const obtenerProductos = async (req, res) => {
     try {
 
         let productos = await productosDao.getAll();  
-        productos= JSON.parse(JSON.stringify(productos))
-        
-        res.status(200).render("productos.hbs", {productos})
+        res.json(productos)
     } catch (error) {
         loggerError.error(error);
         res.status(500).send('Hubo un error');

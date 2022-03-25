@@ -1,7 +1,15 @@
 <div class="container text-center my-3">
     <div class="jumbotron" style="background-color: salmon;color: white;">
-        <h1>USER ERROR SIGNUP</h1>
-
+        <h1>{{titulo}}</h1>
+          <h1>{{msj}} </h1>  
         <button class="btn btn-warning my-5" onclick="location.href='/'">VOLVER</button>
     </div>
 </div>
+
+
+{{#if access_token}}
+  <script type="text/javascript" async>
+    const token = '{{auth.token}}';
+    localStorage.setItem("token", token)
+  </script>
+{{/if}}

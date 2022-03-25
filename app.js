@@ -60,6 +60,7 @@ if(modo == "cluster"){
 }
 else{ // fork
 console.log('modo fork')
+// Start the server.
 const conexserver = httpServer.listen(puerto, function () {
   console.log(`Servidor express en ${conexserver.address().port} - PID ${process.pid} - ${ new Date() }`)
 })

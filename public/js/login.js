@@ -12,29 +12,31 @@ btnLogin.addEventListener("click", async (event) => {
       username: username.value,
       password: password.value,
     };
-  fetch("/api/login", { 
-    method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        redirect: "follow",
-        body: JSON.stringify(data),
-      }).then((res) => {
-        const getCookie = document.cookie;
-        console.log(getCookie);
-        if (!res) {
-          Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Error de Usuario o Contraseña!'
-          })
-      
-        }
-        if (res.redirected) {
-          window.location.href = res.url;
-        }
-      });
+
+      fetchLoginJSON(data).then(token => {
+        if (token){
+          localStorage.setItem("access_token", token.access_token)
+          localStorage.setItem("user", token.user)
+          location.href = '/productos'  
+        } else {     
+            location.href = '/failLogin'
+          }
+      })
+  
     } catch (error) {
       console.trace(error);
     }
   });
+
+  async function fetchLoginJSON(data) {
+    const response = await  fetch("/api/login", { 
+      method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          redirect: "follow",
+          body: JSON.stringify(data),
+        })
+    const token = await response.json();
+    return token;
+  }
