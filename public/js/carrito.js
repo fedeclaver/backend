@@ -36,14 +36,8 @@ fetchGETJSON("/api/carrito/" + localStorage.getItem("user")).then((carrito) => {
             <span class="spec">${carrito.productos[e].detalle}</span></div>
           </div>
           <div class="d-flex flex-row align-items-center"><span class="d-block">2</span>
-          <span class="d-block ml-5 font-weight-bold">$${carrito.productos[e].precio}</span>
-          <div class="bi bi-trash ml-3 text-black-50" onclick="eliminarProductoCarrito(${carrito.productos[e].id},${carrito.id})">
-          <img src="./img/trash.svg"className="trash" alt="trash" />
-          </div></div>
-        
-          
-        
-              
+          <span class="d-block ml-5 font-weight-bold">$${carrito.productos[e].precio}</span>        
+          <i class="bi bi-trash ml-3 text-black-50" onclick="eliminarProductoCarrito(${carrito.productos[e].id},${carrito.id})"></i></div>  
           </div>`;
       }
     } else {
