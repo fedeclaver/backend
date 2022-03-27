@@ -8,7 +8,7 @@ const routesViews = require("./views");
 
 
 router.use('/',routesViews)
-router.use('/api',  auth,productosRouter,carritosRouter)
+router.use('/api',  auth,productosRouter,carritosRouter,compraRouter)
 
 
 

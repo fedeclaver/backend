@@ -20,6 +20,11 @@ const crearCompra = async (req, res) => {
     if (!carrito) {
       res.status(404).json({ msg: "Carrito no encontrado" });
     } ;
+    
+    if (carrito.length < 1) {
+      res.status(404).json({ msg: "Carrito sin productos" });
+    } ;
+    
     let objeto = {
         timestamp: Date.now(),
         productos: parse_obj(carrito.productos)    
@@ -27,6 +32,7 @@ const crearCompra = async (req, res) => {
  
 
     const idcompra = await comprasDao.save(objeto);
+    //borro el carrito anterior
     if (idcompra) {
       let carrito = await carritosDao.deleteById(req.params.id);
    

@@ -57,7 +57,7 @@ fetchGETJSON("/api/carrito/" + localStorage.getItem("user")).then((carrito) => {
           <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
               <div class="col">TOTAL</div>
               <div class="col text-right">${total}</div>
-          </div> <button class="btn btn-success">PAGAR</button>
+          </div> <button class="btn btn-success" onclick="comprarCarrito('${carrito.id}')">PAGAR</button>
       </div>
       </div>
       
@@ -73,8 +73,8 @@ fetchGETJSON("/api/carrito/" + localStorage.getItem("user")).then((carrito) => {
 
 
 function eliminarProductoCarrito(id, idc) {
-if (idc != "") {
-  fetchGETJSON("/api/carritos/eliminarProducto/" + localStorage.getItem("user") + "/"+ parseInt(id))  
+if (idc != "" || (localStorage.getItem("user")) != "") {
+  fetchGETJSON("/api/carritos/eliminarProducto/" + (localStorage.getItem("user")) + "/"+ parseInt(id))
     .then((res) => res.text())
     .then((res) => {
       alert(res);
@@ -84,3 +84,16 @@ if (idc != "") {
 }
 }
 
+function comprarCarrito(id, idc) {
+  if (idc != "" || (localStorage.getItem("user")) != "") {
+    fetchGETJSON("/api/compra/" + (localStorage.getItem("user")) )
+      .then((res) => res.text())
+      .then((res) => {
+        alert(res);
+        location.reload();
+        return false;
+      });
+  }
+  }
+  
+  

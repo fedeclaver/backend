@@ -7,11 +7,11 @@ const { authorization} = require("../utils/jwt.js");
 
 
 
-router.get("/agregar/:id", authorization,  comprasController.crearCompra);
+router.get("/compra/:id", authorization,  comprasController.crearCompra);
 
-router.get("/listar", authorization, comprasController.obtenerCompras);
+router.get("/compra/listar", authorization, comprasController.obtenerCompras);
 
-router.get("/listar/:id", authorization, comprasController.obtenerCompra);
+router.get("/compra/listar/:id", authorization, comprasController.obtenerCompra);
 
 
 module.exports = router;
