@@ -22,11 +22,11 @@ const crearProducto = async (req, res) => {
                 stock: req.body.stock
             };
             // Creamos nuestro producto
-            let  producto = await productosDao.save(newItem);            
+            let  producto = await productosDao.guardar(newItem);            
             if (producto) {                          
-                res.status(201).redirect("/productos/agregar");
+              return  res.status(201).json({ msg: "Producto Agregado Correctamente" });
             } else {
-                res.status(500).json({ msg: "Error al crearProducto" });
+                return   res.status(500).json({ msg: "Error al crearProducto" });
             }
         } else {         
             loggerWarn.warn(
@@ -36,7 +36,7 @@ const crearProducto = async (req, res) => {
         }
     } catch (error) {     
         loggerError.error(error);
-        res.status(500).send('Hubo un error');
+        return res.status(500).send('Hubo un error');
     }
 }
 

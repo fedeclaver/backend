@@ -7,8 +7,8 @@ const { authorization} = require("../utils/jwt.js");
 const viewsController = require("../controllers/viewsControllers");
 
 /*Vistas de chat */
-//router.get("/chat",  viewsController.vistaMensajes);
-//router.get("/agregar",  viewsController.vistaProductos);
+router.get("/chat",  viewsController.vistaMensajes);
+router.get("/agregar",  viewsController.vistaAgregarProductos);
 
 
 router.get("/auth", authorization);

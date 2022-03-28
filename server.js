@@ -115,8 +115,8 @@ app.use((err, req, res, next) => {
 
 // Catch 404 errors and forward them to the error handler.
 app.use((req, res, next) => {
-  //loggerWarn.warn(`Ruta ${req.originalUrl} método ${req.method} no implementado`)
-  // res.status(404).json({ error: -2, descripcion: `ruta ${req.originalUrl} método ${req.method} no implementado` });
+  loggerWarn.warn(`Ruta ${req.originalUrl} método ${req.method} no implementado`)
+   res.status(404).json({ error: -2, descripcion: `ruta ${req.originalUrl} método ${req.method} no implementado` });
   next();
 });
 

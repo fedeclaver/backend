@@ -284,3 +284,16 @@
     at ServerResponse.json (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:267:15)
     at crearCompra (E:\Users\Fede\Documents\DESA\backend\backend\controllers\comprasController.js:94:21)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-03-28T00:15:01.145] [WARN] myWarn - Unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.setHeader (node:_http_outgoing:576:11)
+    at ServerResponse.header (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:170:12)
+    at obtenerCarrito (E:\Users\Fede\Documents\DESA\backend\backend\controllers\carritoController.js:102:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-03-28T00:17:02.205] [WARN] myWarn - Ruta /asdas método GET no implementado
+[2022-03-28T00:17:18.655] [WARN] myWarn - Ruta /asdas método GET no implementado
+[2022-03-28T00:17:40.736] [WARN] myWarn - Ruta /agregar método GET no implementado
+[2022-03-28T00:18:57.114] [WARN] myWarn - Ruta /agregar método GET no implementado
+[2022-03-28T00:19:22.866] [WARN] myWarn - Ruta /api/productos/agregar método POST no implementado
+[2022-03-28T00:20:40.321] [WARN] myWarn - Ruta /api/productos/agregar método POST no implementado

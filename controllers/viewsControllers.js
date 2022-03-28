@@ -8,10 +8,19 @@ const vistafailLogin = async (req, res) => {
   }
 };
 
+
+const vistaAgregarProductos = async (req, res) => {
+  loggerTrace.trace("Ingreso a vistaAgregarProductos"); try {
+
+    res.render("agregar", { layout: "index" });
+  } catch (error) {
+    loggerError.error(error);
+    res.status(500).send("Hubo un error");
+  }
+};
+
 const vistaProductos = async (req, res) => {
   loggerTrace.trace("Ingreso a vistaProductos"); try {
-
-
 
     res.render("productos", { layout: "index" });
   } catch (error) {
@@ -62,4 +71,4 @@ const vistaCarrito = (req, res) => {
   res.render("carrito", { layout: "index" });
 };
 
-module.exports = { vistaMensajes, vistaProductos, vistaHome, vistafailLogin, vistaSignUp, vistaSignUpError ,vistaLogin,vistaCarrito};
+module.exports = { vistaMensajes, vistaProductos, vistaHome, vistafailLogin, vistaSignUp, vistaSignUpError ,vistaLogin,vistaCarrito,vistaAgregarProductos};
