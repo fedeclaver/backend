@@ -10,22 +10,22 @@ router.post("/agregar", productoController.crearProducto);
 router.get("/productos", authorization, productoController.obtenerProductos);
 
 router.put(
-  "/actualizar/:id",
+  "/productos/actualizar/:id",
   
   productoController.actualizarProductos
 );
 router.get(
-  "/actualizar/:id",
+  "/productos/actualizar/:id",
   
   productoController.editarProductos
 );
 router.get(
-  "/listar/:id",
+  "/productos/:id",
   
   productoController.obtenerProducto
 );
 router.delete(
-  "/borrar/:id",
+  "productos/borrar/:id",
   
   productoController.eliminarProducto
 );
