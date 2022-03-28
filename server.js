@@ -38,6 +38,16 @@ const webSocket = require('./services/sockets');
 // Create the express app.
 const app = express();
 
+const os = require("os");
+const formData = require("express-form-data");
+const options = {
+  uploadDir: os.tmpdir(),
+  autoClean: true
+};
+
+// parse data with connect-multiparty. 
+app.use(formData.parse(options));
+
 const httpServer = http.createServer(app);
 
 
@@ -46,14 +56,10 @@ const io = new Socket(httpServer);
 app.use(cors());
 
 
-// for parsing application/json
-app.use(express.json());
-// for parsing application/x-www-form-urlencoded
 
+app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
-// for parsing multipart/form-data
-app.use(express.static(process.cwd() + "/public"));
-
+app.use(express.json());
 // Init Session
 
 app.use(

@@ -29,7 +29,7 @@ class UsuariosDaoMongo extends ContenedorMongo {
       },
        foto: {
          type: String,
-         required: true,
+         required: false,
        },
 
       date_registered: {

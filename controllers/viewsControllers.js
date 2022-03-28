@@ -48,8 +48,8 @@ const vistaSignUp = (req, res) => {
 };
 /*Vistas de error en signUp */
 const vistaSignUpError = (req, res) => {
-  loggerTrace.trace("Ingreso a vista SignUpError");
-  return res.render("/signUpError");
+  loggerTrace.trace("Ingreso a vista failSignUp");
+  return res.render("failSignUp");
 };
 /*Vistas de login */
 const vistaLogin = (req, res) => {

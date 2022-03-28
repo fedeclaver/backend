@@ -20,7 +20,7 @@ fetchGETJSON("/api/productos").then((productos) => {
 
                   <div class="card">
                   
-                            <img src="${producto.foto}" style="width: 100px height: 100px " class="card-img-top " alt="...">
+                            <img src="${producto.foto}"  class="card-img-top " alt="...">
                             <div class="card-body">
                               <h5 class="card-title"> ${producto.nombre}</h5>
                               <p>Producto Id: ${producto.id}</p>

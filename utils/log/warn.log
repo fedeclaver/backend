@@ -243,3 +243,27 @@
     at Object.<anonymous> (E:\Users\Fede\Documents\DESA\backend\backend\contenedores\ContenedorMongo.js:5:10)
     at Module._compile (node:internal/modules/cjs/loader:1103:14)
     at Object.Module._extensions..js (node:internal/modules/cjs/loader:1155:10)
+[2022-03-27T11:11:54.724] [WARN] myWarn - Usuario ya existe!
+[2022-03-27T11:12:34.260] [WARN] myWarn - Usuario ya existe!
+[2022-03-27T11:12:38.478] [WARN] myWarn - Usuario ya existe!
+[2022-03-27T11:12:43.800] [WARN] myWarn - Usuario ya existe!
+[2022-03-27T11:14:19.994] [WARN] myWarn - Usuario ya existe!
+[2022-03-27T11:14:39.342] [WARN] myWarn - Faltó subir una foto de perfil
+[2022-03-27T11:15:35.223] [WARN] myWarn - Faltó subir una foto de perfil
+[2022-03-27T11:16:17.690] [WARN] myWarn - Faltó subir una foto de perfil
+[2022-03-27T11:17:08.689] [WARN] myWarn - Faltó subir una foto de perfil
+[2022-03-27T11:17:14.242] [WARN] myWarn - Faltó subir una foto de perfil
+[2022-03-27T11:22:45.009] [WARN] myWarn - Faltó subir una foto de perfil
+[2022-03-27T11:23:53.190] [WARN] myWarn - Faltó subir una foto de perfil
+[2022-03-27T11:37:34.602] [WARN] myWarn - Faltó subir una foto de perfil
+[2022-03-27T11:37:48.475] [WARN] myWarn - Faltó subir una foto de perfil
+[2022-03-27T12:08:00.018] [WARN] myWarn - Usuario ya existe!
+[2022-03-27T12:08:55.585] [WARN] myWarn - Usuario ya existe!
+[2022-03-27T12:09:17.737] [WARN] myWarn - Usuario ya existe!
+[2022-03-27T20:02:00.036] [WARN] myWarn - Faltó subir una foto de perfil
+[2022-03-27T20:13:46.782] [WARN] myWarn - Usuario ya existe!
+[2022-03-27T20:14:46.071] [WARN] myWarn - Usuario ya existe!
+[2022-03-27T20:16:13.221] [WARN] myWarn - Usuario ya existe!
+[2022-03-27T20:17:31.469] [WARN] myWarn - Usuario ya existe!
+[2022-03-27T20:19:05.340] [WARN] myWarn - Usuario ya existe!
+[2022-03-27T20:25:06.742] [WARN] myWarn - Usuario loguinfedeclaver@gmail.com

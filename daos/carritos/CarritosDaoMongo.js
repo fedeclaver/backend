@@ -9,16 +9,16 @@ class CarritosDaoMongo extends ContenedorMongo {
             id: { type: String, required: true },           
             timestamp: {type: String, required: true },
             productos:[{
-                id: { type: Number, required: true },
-                timestamp: { type: String, required: true },
-                nombre: { type: String, required: true },
-                descripcion: { type: String, required: true },
-                codigo: { type: Number, required: true },
-                foto: { type: String, required: true },
+                id: { type: Number, required: true },               
+                nombre: { type: String, required: true }, 
                 precio: { type: Number, required: true }, 
-                cantidad:{type: Number, required: true },
-                stock: { type: Number, required: true }
-            }]
+                cantidad:{type: Number, required: true }              
+
+            }  
+        ],
+        direccion: { type: String, require: true },
+        total: { type: Number, required: true, default: 0 },
+        timestamp: { type: String, require: true },
         })
     }
 

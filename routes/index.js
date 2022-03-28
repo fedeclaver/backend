@@ -7,8 +7,8 @@ const compraRouter = require('./compra');
 const routesViews = require("./views");
 
 
-router.use('/',routesViews)
-router.use('/api',  auth,productosRouter,carritosRouter,compraRouter)
+router.use('/', routesViews)
+router.use('/api', auth,productosRouter,carritosRouter,compraRouter)
 
 
 

@@ -28,5 +28,7 @@ SignUpform.addEventListener('submit', async e => {
   if (access_token) {
     localStorage.setItem("access_token", access_token);
     location.href = '/'
-  } 
+  } else {
+    location.href = '/failSignUp'
+  }
 })

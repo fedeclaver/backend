@@ -29,18 +29,40 @@ const crearCarrito = async (req, res) => {
 const agregarProducto = async (req, res) => {
   loggerTrace.trace("Ingreso a agregarProducto");
   try {
-    let carrito = await carritosDao.getById(req.params.idCarrito);
+    const { id_prod, idCarrito, cantidad = 1, direccion= 'sin Datos' } = req.params;
+    let carrito = await carritosDao.getById(idCarrito);
     if (!carrito) {
       let objeto = {productos: []}
-        objeto = Object.assign({ id:req.params.idCarrito,timestamp: Date.now() , objeto });      
-         const idCarrito = await carritosDao.save(objeto);
+      carrito = Object.assign({ id:idCarrito,timestamp: Date.now() , objeto ,direccion:direccion});      
+        carrito = await carritosDao.save(carrito);
     }
-    let producto = await productosDao.getById(req.params.id_prod);
+    let producto = await productosDao.getById(id_prod);
+ 
     if (!producto) {
       res.status(404).json({ msg: "Producto no encontrado" });
     }
-    carrito.productos.push(producto)
-    let carritoact = await carritosDao.update(carrito);
+    
+
+
+    const productoIndex = carrito.productos.findIndex(elemento => elemento.id == id_prod)
+    if (productoIndex > -1) {
+      let productoItem = carrito.productos[productoIndex];
+				productoItem.cantidad += cantidad;
+				carrito.productos[productoItem] = productoItem;
+      } else {
+        carrito.productos.push({
+        id : id_prod,
+        nombre: producto.nombre,
+        cantidad : cantidad,
+        precio :producto.precio  
+    })
+ 
+  }
+
+    carrito.direccion =  direccion;
+    carrito.total += cantidad * producto.precio;
+
+    let carritoact = await carritosDao.update( carrito );
     if (carritoact) {
       res
         .status(200)

@@ -6,7 +6,7 @@ const { generateAuthToken} = require("../utils/jwt.js");
 const { loggerTrace, loggerInfo, loggerWarn, loggerError } = require('../utils/log4js');
 const bcrypt = require('bcrypt');
 const parse_obj = obj => JSON.parse(JSON.stringify(obj))
-
+const upload = require("../middleware/multer");
 
 // validar password
 const isValidPassword = (userPassword, password) => {
@@ -69,19 +69,21 @@ const signUp = async (req, res) => {
     let username  = req.body.username;
     //valido el mail del usuario
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(username)) {
-       return res.render("signUpResult", { msj: "Mail invalido" ,titulo : "sign Up Error"});
+      return  res.status(404).json({ msg: '"Mail invalido!' })  
     }
     // buscar en mongo el usuario
     const usuario = await usuariosDao.getByName(username);
 
     if (usuario) {
       loggerWarn.warn("Usuario ya existe!");
-      return res.render("signUpResult", { msj: 'Usuario ya existe',titulo : "sign Up Error" });
+    return  res.status(404).json({ msg: 'Usuario ya existe!' }) 
     }
-     if (!req.file) {
-       loggerWarn.warn("Faltó subir una foto de perfil");
-       return res.render("signUpResult",{ msj: "Faltó subir una foto de perfil" ,titulo : "sign Up Error"});
-     }
+    //  if (!req.file) {
+    //    loggerWarn.warn("Faltó subir una foto de perfil");
+    //    res.status(404).json({ msg: 'Faltó subir una foto de perfil' }) 
+    //  }else {
+    //   upload.single("foto")
+    //  }
     // creamos el usuario
     const newUser = {
       usuario: req.body.username,
@@ -90,7 +92,7 @@ const signUp = async (req, res) => {
       direccion: req.body.direccion,
       edad: req.body.edad,
       telefono: req.body.telefono,
-      foto: req.file.filename
+      //foto: req.file.filename
     };
     const access_token = generateAuthToken(req.body.username);
     const creausuario = await usuariosDao.save(newUser);
@@ -117,8 +119,11 @@ const signUp = async (req, res) => {
           loggerInfo.info(info);
         }
       );
-    }
-    return res.render("signUpResult",{ access_token ,titulo : "sign Up ok"});
+      }
+
+      return  res.json({ access_token }) 
+  
+
 
   } catch (error) {
     console.log(error);
