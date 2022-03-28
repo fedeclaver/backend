@@ -267,3 +267,20 @@
 [2022-03-27T20:17:31.469] [WARN] myWarn - Usuario ya existe!
 [2022-03-27T20:19:05.340] [WARN] myWarn - Usuario ya existe!
 [2022-03-27T20:25:06.742] [WARN] myWarn - Usuario loguinfedeclaver@gmail.com
+[2022-03-27T23:54:44.384] [WARN] myWarn - Authenticate
+[2022-03-27T23:57:24.470] [WARN] myWarn - Unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.setHeader (node:_http_outgoing:576:11)
+    at ServerResponse.header (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:267:15)
+    at crearCompra (E:\Users\Fede\Documents\DESA\backend\backend\controllers\comprasController.js:94:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-03-27T23:57:54.318] [WARN] myWarn - Unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.setHeader (node:_http_outgoing:576:11)
+    at ServerResponse.header (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:267:15)
+    at crearCompra (E:\Users\Fede\Documents\DESA\backend\backend\controllers\comprasController.js:94:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)

@@ -18,24 +18,28 @@ const crearCompra = async (req, res) => {
   try {
     let carrito = await carritosDao.getById(req.params.id);
     if (!carrito) {
-      res.status(404).json({ msg: "Carrito no encontrado" });
+      return res.status(404).json({ msg: "Carrito no encontrado" });
     } ;
     
-    if (carrito.length < 1) {
-      res.status(404).json({ msg: "Carrito sin productos" });
+    if (carrito.productos.length < 1) {
+      return res.status(404).json({ msg: "Carrito sin productos" });
     } ;
-    
+    let carritocount = await carritosDao.count();
     let objeto = {
         timestamp: Date.now(),
-        productos: parse_obj(carrito.productos)    
+        user: carrito.id,
+        id: carritocount++,
+        productos: parse_obj(carrito.productos)   ,
+        estado: 'Generado',
+        total: carrito.total 
+
   }
  
 
     const idcompra = await comprasDao.save(objeto);
     //borro el carrito anterior
     if (idcompra) {
-      let carrito = await carritosDao.deleteById(req.params.id);
-   
+      let carrito = await carritosDao.deleteById(req.params.id);   
    
       const productosList = objeto.productos.map(
         (product) =>
@@ -44,9 +48,6 @@ const crearCompra = async (req, res) => {
       `
       )
       .join("\n");
-
-
-
               // envio de email al admin
               transporterGmail.sendMail({
                 from: config.gmail.user,
@@ -83,10 +84,10 @@ const crearCompra = async (req, res) => {
             
 
 
-            res.status(200).json({ msg: `Compra insertado correctamente id:${idcompra}` });          
+            return  res.status(200).json({ msg: `Compra insertado correctamente id:${idcompra}` });          
           
     } else {
-      res.status(500).json({ msg: "Error al crearCompra" });
+      return  res.status(500).json({ msg: "Error al crearCompra" });
     }
   } catch (error) {
     console.log(error);

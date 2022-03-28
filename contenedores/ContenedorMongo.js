@@ -46,6 +46,11 @@ class ContenedorMongo {
     
 }
   
+ //buscar todos los registros.
+ async count() {
+    return  await this.coleccion.find({}).count()
+}
+
     //buscar todos los registros.
     async getAll() {
 
