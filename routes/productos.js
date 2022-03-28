@@ -5,7 +5,7 @@ const productoController = require("../controllers/productoController");
 const { authorization} = require("../utils/jwt.js");
 
 //api/productos
-router.post("/agregar", productoController.crearProducto);
+router.post("/productos/agregar", productoController.crearProducto);
 
 router.get("/productos", authorization, productoController.obtenerProductos);
 
