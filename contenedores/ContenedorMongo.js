@@ -22,7 +22,7 @@ class ContenedorMongo {
                 max = JSON.parse(max[0].id);
                 objeto.id = max + 1;
             }
-            let doc = await this.coleccion.create(JSON.parse(objeto));
+            let doc = await this.coleccion.create(objeto);
             doc = parse_obj(doc)
             return doc
         } catch (error) {

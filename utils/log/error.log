@@ -34,3 +34,47 @@
     at ProductosDaoMongo.guardar (E:\Users\Fede\Documents\DESA\backend\backend\contenedores\ContenedorMongo.js:29:19)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async crearProducto (E:\Users\Fede\Documents\DESA\backend\backend\controllers\productoController.js:25:29)
+[2022-03-28T20:33:43.306] [ERROR] myError - Error: Error al guardar: SyntaxError: Unexpected token o in JSON at position 1
+    at ProductosDaoMongo.guardar (E:\Users\Fede\Documents\DESA\backend\backend\contenedores\ContenedorMongo.js:29:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async crearProducto (E:\Users\Fede\Documents\DESA\backend\backend\controllers\productoController.js:25:29)
+[2022-03-28T20:34:11.358] [ERROR] myError - Error: Error al guardar: SyntaxError: Unexpected token o in JSON at position 1
+    at ProductosDaoMongo.guardar (E:\Users\Fede\Documents\DESA\backend\backend\contenedores\ContenedorMongo.js:29:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async crearProducto (E:\Users\Fede\Documents\DESA\backend\backend\controllers\productoController.js:25:29)
+[2022-03-28T20:35:02.128] [ERROR] myError - Error: Error al guardar: SyntaxError: Unexpected token o in JSON at position 1
+    at ProductosDaoMongo.guardar (E:\Users\Fede\Documents\DESA\backend\backend\contenedores\ContenedorMongo.js:29:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async crearProducto (E:\Users\Fede\Documents\DESA\backend\backend\controllers\productoController.js:25:29)
+[2022-03-28T20:35:56.277] [ERROR] myError - Error: Error al guardar: SyntaxError: Unexpected token o in JSON at position 1
+    at ProductosDaoMongo.guardar (E:\Users\Fede\Documents\DESA\backend\backend\contenedores\ContenedorMongo.js:29:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async crearProducto (E:\Users\Fede\Documents\DESA\backend\backend\controllers\productoController.js:25:29)
+[2022-03-28T20:36:01.307] [ERROR] myError - Error: Error al guardar: SyntaxError: Unexpected token o in JSON at position 1
+    at ProductosDaoMongo.guardar (E:\Users\Fede\Documents\DESA\backend\backend\contenedores\ContenedorMongo.js:29:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async crearProducto (E:\Users\Fede\Documents\DESA\backend\backend\controllers\productoController.js:25:29)
+[2022-03-28T20:40:53.158] [ERROR] myError - Error: Error al guardar: SyntaxError: Unexpected token o in JSON at position 1
+    at ProductosDaoMongo.guardar (E:\Users\Fede\Documents\DESA\backend\backend\contenedores\ContenedorMongo.js:29:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async crearProducto (E:\Users\Fede\Documents\DESA\backend\backend\controllers\productoController.js:25:29)
+[2022-03-28T20:41:30.893] [ERROR] myError - Error: Error al guardar: SyntaxError: Unexpected token o in JSON at position 1
+    at ProductosDaoMongo.guardar (E:\Users\Fede\Documents\DESA\backend\backend\contenedores\ContenedorMongo.js:29:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async crearProducto (E:\Users\Fede\Documents\DESA\backend\backend\controllers\productoController.js:25:29)
+[2022-03-28T20:41:59.246] [ERROR] myError - Error: Error al guardar: SyntaxError: Unexpected token o in JSON at position 1
+    at ProductosDaoMongo.guardar (E:\Users\Fede\Documents\DESA\backend\backend\contenedores\ContenedorMongo.js:29:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async crearProducto (E:\Users\Fede\Documents\DESA\backend\backend\controllers\productoController.js:25:29)
+[2022-03-28T20:43:17.290] [ERROR] myError - Error: Error al guardar: SyntaxError: Unexpected token o in JSON at position 1
+    at ProductosDaoMongo.guardar (E:\Users\Fede\Documents\DESA\backend\backend\contenedores\ContenedorMongo.js:29:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async crearProducto (E:\Users\Fede\Documents\DESA\backend\backend\controllers\productoController.js:25:29)
+[2022-03-28T20:48:54.300] [ERROR] myError - Error: Error al guardar: SyntaxError: Unexpected token o in JSON at position 1
+    at ProductosDaoMongo.guardar (E:\Users\Fede\Documents\DESA\backend\backend\contenedores\ContenedorMongo.js:29:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async crearProducto (E:\Users\Fede\Documents\DESA\backend\backend\controllers\productoController.js:25:29)
+[2022-03-28T20:50:20.488] [ERROR] myError - Error: Error al guardar: SyntaxError: Unexpected token o in JSON at position 1
+    at ProductosDaoMongo.guardar (E:\Users\Fede\Documents\DESA\backend\backend\contenedores\ContenedorMongo.js:29:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async crearProducto (E:\Users\Fede\Documents\DESA\backend\backend\controllers\productoController.js:25:29)
