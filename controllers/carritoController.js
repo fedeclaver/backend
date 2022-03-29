@@ -10,7 +10,7 @@ const crearCarrito = async (req, res) => {
   loggerTrace.trace("Ingreso a crearCarrito");
   try {
     let objeto = {productos: []}
-       objeto = Object.assign({ timestamp: Date.now() , objeto });
+       objeto = Object.assign({ timestamp: Date.now() , objeto,cantidad,direccion });
        
     const idCarrito = await carritosDao.save(objeto);
     if (idCarrito) {

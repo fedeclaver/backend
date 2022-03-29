@@ -18,7 +18,7 @@ router.get("/carrito/agregar/:idCarrito/:id_prod",authorization,carritoControlle
 
 router.get("/carrito/eliminar/:idCarrito/:id_prod",authorization, carritoController.eliminarProducto);
 
-router.delete("/carrito/borrar/:id",authorization, carritoController.eliminarCarrito);
+router.delete("/carrito/:id",authorization, carritoController.eliminarCarrito);
 
 
 
