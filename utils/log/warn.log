@@ -349,3 +349,4 @@
     at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:170:12)
     at agregarProducto (E:\Users\Fede\Documents\DESA\backend\backend\controllers\carritoController.js:75:21)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-03-28T23:36:12.363] [WARN] myWarn - Usuario loguinfedeclaver@gmail.com

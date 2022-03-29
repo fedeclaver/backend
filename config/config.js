@@ -5,7 +5,7 @@ module.exports = {
   fileSystem: {
     path: "./DB",
   },
-  admin: true,
+  admin: 'useradmin@user.com',
   mongodb: {
     // cnxStr: process.env.MONGO_ATLAS,
     cnxStr:'mongodb://localhost:27017/ecommerce',
