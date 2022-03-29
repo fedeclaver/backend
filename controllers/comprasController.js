@@ -24,6 +24,7 @@ const crearCompra = async (req, res) => {
     if (carrito.productos.length < 1) {
       return res.status(404).json({ msg: "Carrito sin productos" });
     } ;
+
     let carritocount = await carritosDao.count();
     let objeto = {
         timestamp: Date.now(),
@@ -31,7 +32,8 @@ const crearCompra = async (req, res) => {
         id: carritocount++,
         productos: parse_obj(carrito.productos)   ,
         estado: 'Generado',
-        total: carrito.total 
+        total: carrito.total,
+        direccion: carrito.direccion
 
   }
  

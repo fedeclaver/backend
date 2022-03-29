@@ -45,6 +45,7 @@ class ComprasDaoMongo extends ContenedorMongo {
                     type: String,
                     required: true,
                 },
+                direccion: { type: String, require: true },
                 total: {
                     type: Number,
                     required: true,
