@@ -298,3 +298,54 @@
 [2022-03-28T00:19:22.866] [WARN] myWarn - Ruta /api/productos/agregar método POST no implementado
 [2022-03-28T00:20:40.321] [WARN] myWarn - Ruta /api/productos/agregar método POST no implementado
 [2022-03-28T20:28:20.970] [WARN] myWarn - Usuario loguinfedeclaver@gmail.com
+[2022-03-28T23:05:03.887] [WARN] myWarn - Unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.setHeader (node:_http_outgoing:576:11)
+    at ServerResponse.header (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:170:12)
+    at obtenerCarrito (E:\Users\Fede\Documents\DESA\backend\backend\controllers\carritoController.js:103:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-03-28T23:05:28.256] [WARN] myWarn - Usuario loguinfedeclaver@gmail.com
+[2022-03-28T23:05:54.701] [WARN] myWarn - Unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.setHeader (node:_http_outgoing:576:11)
+    at ServerResponse.header (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:170:12)
+    at obtenerCarrito (E:\Users\Fede\Documents\DESA\backend\backend\controllers\carritoController.js:103:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-03-28T23:06:05.832] [WARN] myWarn - Unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.setHeader (node:_http_outgoing:576:11)
+    at ServerResponse.header (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:170:12)
+    at obtenerCarrito (E:\Users\Fede\Documents\DESA\backend\backend\controllers\carritoController.js:103:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-03-28T23:07:46.260] [WARN] myWarn - Unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.setHeader (node:_http_outgoing:576:11)
+    at ServerResponse.header (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:170:12)
+    at obtenerCarrito (E:\Users\Fede\Documents\DESA\backend\backend\controllers\carritoController.js:103:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-03-28T23:09:50.173] [WARN] myWarn - Unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.setHeader (node:_http_outgoing:576:11)
+    at ServerResponse.header (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:170:12)
+    at obtenerCarrito (E:\Users\Fede\Documents\DESA\backend\backend\controllers\carritoController.js:102:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-03-28T23:14:51.209] [WARN] myWarn - Authenticate
+[2022-03-28T23:20:04.116] [WARN] myWarn - Unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.setHeader (node:_http_outgoing:576:11)
+    at ServerResponse.header (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:170:12)
+    at agregarProducto (E:\Users\Fede\Documents\DESA\backend\backend\controllers\carritoController.js:75:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-03-28T23:20:07.408] [WARN] myWarn - Unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.setHeader (node:_http_outgoing:576:11)
+    at ServerResponse.header (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (E:\Users\Fede\Documents\DESA\backend\backend\node_modules\express\lib\response.js:170:12)
+    at agregarProducto (E:\Users\Fede\Documents\DESA\backend\backend\controllers\carritoController.js:75:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)

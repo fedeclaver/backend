@@ -10,15 +10,14 @@ const crearCarrito = async (req, res) => {
   loggerTrace.trace("Ingreso a crearCarrito");
   try {
     let objeto = {productos: []}
+
        objeto = Object.assign({ timestamp: Date.now() , objeto,cantidad,direccion });
        
     const idCarrito = await carritosDao.save(objeto);
     if (idCarrito) {
-      res
-        .status(200)        
-        .json({ msg: `Carrito insertado correctamente id:${idCarrito}` });
+      return  res.json({ msg: `Carrito insertado correctamente id:${idCarrito}` });
     } else {
-      res.status(500).json({ msg: "Error al crearCarrito" });
+      return  res.status(500).json({ msg: "Error al crearCarrito" });
     }
   } catch (error) {
     console.log(error);
@@ -39,11 +38,9 @@ const agregarProducto = async (req, res) => {
     let producto = await productosDao.getById(id_prod);
  
     if (!producto) {
-      res.status(404).json({ msg: "Producto no encontrado" });
+    return res.status(404).json({ msg: "Producto no encontrado" });
     }
     
-
-
     const productoIndex = carrito.productos.findIndex(elemento => elemento.id == id_prod)
     if (productoIndex > -1) {
       let productoItem = carrito.productos[productoIndex];
@@ -64,13 +61,12 @@ const agregarProducto = async (req, res) => {
 
     let carritoact = await carritosDao.update( carrito );
     if (carritoact) {
-      res
-        .status(200)
-       // .redirect("/index.html")
-        .json({ msg: `El Producto se agregó correctamente` });
+      
+
+      return    res.json({ msg: `El Producto se agregó correctamente` });
         
     } else {
-      res.status(500).json({ msg: "Error al agregando el Producto" });
+      return  res.status(500).json({ msg: "Error al agregando el Producto" });
     }
   } catch (error) {
     console.log(error);
@@ -81,9 +77,8 @@ const agregarProducto = async (req, res) => {
  const obtenerCarritos = async (req, res) => {
   loggerTrace.trace("Ingreso a obtenerCarritos");
   try {
-    let carritos = await carritosDao.getAll();   
-    carritos= JSON.parse(JSON.stringify(carritos)) 
-    res.json({carritos})
+    let carritos = await carritosDao.getAll();      
+    return res.json(carritos)
   } catch (error) {
     console.log(error);
     res.status(500).json("Error obtenerCarritos");
@@ -94,7 +89,7 @@ const  obtenerCarrito = async (req, res) => {
   try {
     let carrito = await carritosDao.getById(req.params.id);
     if (!carrito) {
-      res.status(404).json({ msg: "Carrito no encontrado" });
+     return  res.status(404).json({ msg: "Carrito no encontrado" });
     }
     res.json(carrito);
   } catch (error) {
@@ -108,9 +103,9 @@ const  eliminarCarrito = async (req, res) => {
   try {
     let carrito = await carritosDao.deleteById(req.params.id);
     if (!carrito) {
-      res.status(404).json({ msg: "Carrito no encontrado" });
+      return res.status(404).json({ msg: "Carrito no encontrado" });
     } else {
-      res.json({ msg: "Carrito eliminado correctamente" });
+      return res.json({ msg: "Carrito eliminado correctamente" });
     }
   } catch (error) {
     console.log(error);
@@ -123,11 +118,11 @@ const eliminarProducto = async (req, res) => {
   try {
     let carrito = await carritosDao.getById(req.params.idCarrito);
     if (!carrito) {
-      res.status(404).json({ msg: "Carrito no encontrado" });
+      return  res.status(404).json({ msg: "Carrito no encontrado" });
     }
     let producto = await productosDao.getById(req.params.id_prod);
     if (!producto) {
-      res.status(404).json({ msg: "Producto no encontrado" });
+      return   res.status(404).json({ msg: "Producto no encontrado" });
     }
 
 
@@ -135,9 +130,9 @@ const eliminarProducto = async (req, res) => {
     carrito.productos = parse_obj(resultado);
     let carritoact = await carritosDao.update(carrito);     
     if (carritoact) {
-      res.status(200).json({ msg: `El Producto se elimino correctamente` });
+      return res.json({ msg: `El Producto se elimino correctamente` });
     } else {
-      res.status(500).json({ msg: "Error al eliminando el Producto" });
+      return   res.status(500).json({ msg: "Error al eliminando el Producto" });
     }
   } catch (error) {
     console.log(error);

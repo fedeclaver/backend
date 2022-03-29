@@ -4,9 +4,9 @@ const transporterGmail = require('../email/gmail');
 const carritosDao = require("../daos/carritos/index.js");
 const config = require('../config/config');
 // twilio
-const accountSid = config.TWILIO_ACCOUNT_SID;
-const authToken = config.TWILIO_AUTH_TOKEN;
-const client = require('twilio')(accountSid, authToken); 
+// const accountSid = config.TWILIO_ACCOUNT_SID;
+// const authToken = config.TWILIO_AUTH_TOKEN;
+// const client = require('twilio')(accountSid, authToken); 
 
 
 const parse_obj = obj => JSON.parse(JSON.stringify(obj))
@@ -38,9 +38,9 @@ const crearCompra = async (req, res) => {
   }
  
 
-    const idcompra = await comprasDao.save(objeto);
+    const compra = await comprasDao.save(objeto);
     //borro el carrito anterior
-    if (idcompra) {
+    if (compra) {
       let carrito = await carritosDao.deleteById(req.params.id);   
    
       const productosList = objeto.productos.map(
@@ -65,28 +65,28 @@ const crearCompra = async (req, res) => {
             });
          
             //envio whassap
-            client.messages.create({
-              body: `Nuevo Pedido de ${req.user.nombre} - ${req.user.usuario}`,
-              from: `whatsapp:${config.TWILIO_NUM_WHATSAPP}`,
-              to: `whatsapp:${config.ADMIN_WHATSAPP}`
-          })
-          .then(message => loggerInfo.info(`WhatsApp_id: ${message.sid} - Enviado a: ${message.to}`))
-          .catch(err => loggerWarn.warn(err.message))
+        //     client.messages.create({
+        //       body: `Nuevo Pedido de ${req.user.nombre} - ${req.user.usuario}`,
+        //       from: `whatsapp:${config.TWILIO_NUM_WHATSAPP}`,
+        //       to: `whatsapp:${config.ADMIN_WHATSAPP}`
+        //   })
+        //   .then(message => loggerInfo.info(`WhatsApp_id: ${message.sid} - Enviado a: ${message.to}`))
+        //   .catch(err => loggerWarn.warn(err.message))
 
-          //envio sms
-          // mensaje de texto al cliente
-          client.messages.create({
-            body: 'Su pedido ha sido recibido y se encuentra en proceso.',
-            from: config.TWILIO_NUM_SMS,
-            to: req.user.telefono
-        })
-            .then(message => loggerInfo.info(`SMS_id: ${message.sid} - Enviado a: ${message.to}`))
-            .catch(err => loggerWarn.warn(err.message))   
+        //   //envio sms
+        //   // mensaje de texto al cliente
+        //   client.messages.create({
+        //     body: 'Su pedido ha sido recibido y se encuentra en proceso.',
+        //     from: config.TWILIO_NUM_SMS,
+        //     to: req.user.telefono
+        // })
+        //     .then(message => loggerInfo.info(`SMS_id: ${message.sid} - Enviado a: ${message.to}`))
+        //     .catch(err => loggerWarn.warn(err.message))   
             
             
 
 
-            return  res.status(200).json({ msg: `Compra insertado correctamente id:${idcompra}` });          
+            return  res.status(200).json({ msg: `Compra insertado correctamente id:${compra._id}` });          
           
     } else {
       return  res.status(500).json({ msg: "Error al crearCompra" });
